@@ -48,7 +48,7 @@ $(function () {
 	$('#fullpage').fullpage({
 		anchors:['search', 'filter' ,'magazine-1','magazine-2','info'],
 		navigation: true,
-		navigationTooltips:["Aaa","Aaa","Aaa","Aaa","Aaa"],
+		navigationTooltips:["식물검색","식물찾기","매거진","매거진","플립"],
 		navigationPosition: 'left',
 		scrollBar : true,
 		fitToSection: false,

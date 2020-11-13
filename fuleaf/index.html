@@ -7,8 +7,8 @@
 	<!-- <link rel="stylesheet" href="./css/docSlider.css"> -->
 	<link rel="stylesheet" href="./css/jquery.fullpage.css">
 	<link rel="stylesheet" href="./css/aos.css">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-	<link rel="stylesheet" href="./css/style.min.css">
+	<link rel="stylesheet" href="./css/swiper.css">
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 	<div id="fullpage">
@@ -24,27 +24,6 @@
 					<p>잘 키우는 방법이</p>
 					<p class="search-hidden">궁금하다.</p>
 					<a href="#" class="btn-link">보러가기</a>
-				</div>
-
-				<!-- Slider main container -->
-				<div class="swiper-container">
-					<!-- Additional required wrapper -->
-					<div class="swiper-wrapper">
-						<!-- Slides -->
-						<div class="swiper-slide">Slide 1</div>
-						<div class="swiper-slide">Slide 2</div>
-						<div class="swiper-slide">Slide 3</div>
-						...
-					</div>
-					<!-- If we need pagination -->
-					<div class="swiper-pagination"></div>
-
-					<!-- If we need navigation buttons -->
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
-
-					<!-- If we need scrollbar -->
-					<div class="swiper-scrollbar"></div>
 				</div>
 			</div>
 		</section>
@@ -68,101 +47,105 @@
 
 		<section class="full-page-wrap section">
 			<div class="page-contents">
-				<div class="magazin-fullpage">
-					<div class="magazine-box">
-						<div class="magazine-info">
-							<h2 data-aos="fade-up">반려동물에게 해로운<br>식물이 있다던데.</h2>
-							<div data-aos="fade-up">
-								<dl>
-									<dt>우리 고양이가 토했던 이유</dt>
-									<dd>
-										사실, 처음에는 화분을 받으며, 약간은 난감함이 교차했다. 집에 들여놓는 식물은 들이는 족족 죽이는 ‘킬러의 손’인 내가 과연 이 식물들을 죽이지 않고 잘 키울 수 있을까? 현재는 우리는 30가지가 넘는 식물들을 키우고 있고 주변에서 부탁하는 아픈 식물들..
-									</dd>
-								</dl>
-								<div class="writer-info">
-									<p class="writer"><em>copy</em>김파카</p>
-									<p class="date"><em>data.</em>2020.07.29</p>
-								</div>
+				<div class="magazine-box">
+					<div class="magazine-info">
+						<h2 data-aos="fade-up">반려동물에게 해로운<br>식물이 있다던데.</h2>
+						<div data-aos="fade-up">
+							<dl>
+								<dt>우리 고양이가 토했던 이유</dt>
+								<dd>
+									사실, 처음에는 화분을 받으며, 약간은 난감함이 교차했다. 집에 들여놓는 식물은 들이는 족족 죽이는 ‘킬러의 손’인 내가 과연 이 식물들을 죽이지 않고 잘 키울 수 있을까? 현재는 우리는 30가지가 넘는 식물들을 키우고 있고 주변에서 부탁하는 아픈 식물들..
+								</dd>
+							</dl>
+							<div class="writer-info">
+								<p class="writer"><em>copy</em>김파카</p>
+								<p class="date"><em>data.</em>2020.07.29</p>
 							</div>
 						</div>
-		
-						<!-- 매거진 이미지 -->
-						<div class="magazine-img">
-							<a href="#" class="magazine-link">click</a>
-							<img src="./images/magazine-1.png" alt="">
-						</div>
-						<!-- //매거진 이미지 -->
 					</div>
+	
+					<!-- 매거진 이미지 -->
+					<div class="magazine-img">
+						<a href="#" class="magazine-link">click</a>
+						<img src="./images/magazine-1.png" alt="">
+					</div>
+					<!-- //매거진 이미지 -->
 				</div>
 			</div>
 		</section>
 
 		<section class="full-page-wrap section">
 			<div class="page-contents">
-				<div>
+				<div class="magazine-box-bottom">
 					<h2>다양한 이야기를 만나보세요.</h2>
-					<ul>
-						<li>
-							<div class="thumb"></div>
-							<div class="info">
-								<dl>
-									<dt>여친에게 식물을 선물하는 남친들의 특징.</dt>
-									<dd>꽃보다 식물이 더 특별해</dd>
-								</dl>
-								<div>
-									<p><em>copy.</em>목련의식물</p>
+					<div class="swiper-container">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide" data-aos="fade-up">
+								<div class="thumb">
+									<img src="./images/img1.png" alt="">
 								</div>
-							</div>
-						</li>
-						<li>
-							<div class="thumb"></div>
-							<div class="info">
-								<dl>
-									<dt>반려동물에게 해로운 식물이 있다던데.</dt>
-									<dd>우리 고양이가 토했던 이유</dd>
-								</dl>
-								<div>
-									<p><em>copy.</em>목련의식물</p>
+								<div class="info">
+									<dl>
+										<dt>여친에게 식물을 선물하는 남친들의 특징.</dt>
+										<dd>꽃보다 식물이 더 특별해</dd>
+									</dl>
+									<div>
+										<p><em>copy.</em>목련의식물</p>
+									</div>
 								</div>
-							</div>
-						</li>
-						<li>
-							<div class="thumb"></div>
-							<div class="info">
-								<dl>
-									<dt>식물들은 자기 삶을 살고, 나는 내 삶을 산다.</dt>
-									<dd>식물과 함께 공존하는 법</dd>
-								</dl>
-								<div>
-									<p><em>copy.</em>목련의식물</p>
+							</li>
+							<li class="swiper-slide" data-aos="fade-up" data-aos-duration="1000">
+								<div class="thumb">
+									<img src="./images/img2.png" alt="">
 								</div>
-							</div>
-						</li>
-						<li>
-							<div class="thumb"></div>
-							<div class="info">
-								<dl>
-									<dt>30년 식물을 키워본 경험의 식물 노하우 전수.</dt>
-									<dd>우리집 식물이 죽는 이유</dd>
-								</dl>
-								<div>
-									<p><em>copy.</em>목련의식물</p>
+								<div class="info">
+									<dl>
+										<dt>반려동물에게 해로운 식물이 있다던데.</dt>
+										<dd>우리 고양이가 토했던 이유</dd>
+									</dl>
+									<div>
+										<p><em>copy.</em>목련의식물</p>
+									</div>
 								</div>
-							</div>
-						</li>
-						<li>
-							<div class="thumb"></div>
-							<div class="info">
-								<dl>
-									<dt>물 주기, 내가 뭘 잘못한 거지?</dt>
-									<dd>우리집 식물이 죽는 이유</dd>
-								</dl>
-								<div>
-									<p><em>copy.</em>목련의식물</p>
+							</li>
+							<li class="swiper-slide" data-aos="fade-up" data-aos-duration="2000">
+								<div class="thumb"><img src="./images/img3.png" alt=""></div>
+								<div class="info">
+									<dl>
+										<dt>식물들은 자기 삶을 살고, 나는 내 삶을 산다.</dt>
+										<dd>식물과 함께 공존하는 법</dd>
+									</dl>
+									<div>
+										<p><em>copy.</em>목련의식물</p>
+									</div>
 								</div>
-							</div>
-						</li>
-					</ul>
+							</li>
+							<li class="swiper-slide" data-aos="fade-up" data-aos-duration="3000">
+								<div class="thumb"><img src="./images/img4.png" alt=""></div>
+								<div class="info">
+									<dl>
+										<dt>30년 식물을 키워본 경험의 식물 노하우 전수.</dt>
+										<dd>우리집 식물이 죽는 이유</dd>
+									</dl>
+									<div>
+										<p><em>copy.</em>목련의식물</p>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide" data-aos="fade-up">
+								<div class="thumb"><img src="./images/img5.png" alt=""></div>
+								<div class="info">
+									<dl>
+										<dt>물 주기, 내가 뭘 잘못한 거지?</dt>
+										<dd>우리집 식물이 죽는 이유</dd>
+									</dl>
+									<div>
+										<p><em>copy.</em>목련의식물</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -195,7 +178,7 @@
 	<script src="./js/jquery.fullpage.js"></script>
 	<script src="./js/typing.js"></script>
 	<script src="./js/aos.js"></script>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="./js/swiper.js"></script>
 	<script>
 		$(function() {
 			$('.typer').unityping({
@@ -212,25 +195,9 @@
 
 
 			var mySwiper = new Swiper('.swiper-container', {
-			// Optional parameters
-			// direction: 'vertical',
-			loop: true,
-
-			// If we need pagination
-			pagination: {
-				el: '.swiper-pagination',
-			},
-
-			// Navigation arrows
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			},
-
-			// And if we need scrollbar
-			scrollbar: {
-				el: '.swiper-scrollbar',
-			},
+				loop: true,
+				slidesPerView: 5.5,
+      			spaceBetween: 30,
 			})
 		});
 	</script>
