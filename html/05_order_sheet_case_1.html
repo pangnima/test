@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi">
+	<title>경기도 오더</title>
+
+	<!-- 공통: font preload -->
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Regular.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Medium.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Bold.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/GyeonggiTitle_Medium.woff" type="font/woff" as="font" crossorigin>
+	<!-- //공통: font preload -->
+
+	<!-- 공통: css -->
+	<link rel="stylesheet" href="static/css/style.css">
+	<!-- //공통: css -->
+</head>
+<body>
+
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- bg-color-2 -->
+		<div class="bg-color-2">
+
+			<div class="grid-content gap-4 bd-top-2 bd-bottom-1">
+				<!-- list-line-1 -->
+				<ul class="list-line-1">
+					<li>
+						<div class="grid-col2 wd-2">
+							<div class="left">
+								<p class="txt-type-2 mt-0">황금올리브치킨</p>
+							</div>
+							<div class="right">
+								<p class="txt-type-2 mt-0">45,222,000 원</p>
+							</div>
+						</div>
+						<!-- list-bul-1 -->
+						<ul class="list-bul-1 col3 mt-4">
+							<li>
+								<div class="left">무 추가</div>
+								<div class="center txt-align-center font-point-4">2</div>
+								<div class="right txt-align-right font-point-4">2,457,500 원</div>
+							</li>
+							<li>
+								<div class="left">웨지감자 추가</div>
+								<div class="center txt-align-center font-point-4">2</div>
+								<div class="right txt-align-right font-point-4">1,500 원</div>
+							</li>
+						</ul>
+						<!-- //list-bul-1 -->
+						<a href="javascript:void(0);" class="btn-del"><span class="icon-close"><span>삭제하기</span></span></a>
+					</li>
+					<li>
+						<div class="grid-col2 wd-2">
+							<div class="left">
+								<p class="txt-type-2 mt-0">세트로 먹는 오리지널 콤보반반(황금올리브+크리스피)</p>
+							</div>
+							<div class="right">
+								<p class="txt-type-2 mt-0">45,222,000 원</p>
+							</div>
+						</div>
+						<!-- list-bul-1 -->
+						<ul class="list-bul-1 col3 mt-4">
+							<li>
+								<div class="left">무 추가</div>
+								<div class="center txt-align-center font-point-4">2</div>
+								<div class="right txt-align-right font-point-4">500 원</div>
+							</li>
+							<li>
+								<div class="left">웨지감자 추가 치즈 황금 비율 정말 맛있는 감자</div>
+								<div class="center txt-align-center font-point-4">2</div>
+								<div class="right txt-align-right font-point-4">1,500 원</div>
+							</li>
+						</ul>
+						<!-- //list-bul-1 -->
+						<a href="javascript:void(0);" class="btn-del"><span class="icon-close"><span>삭제하기</span></span></a>
+					</li>
+				</ul>
+				<!-- //list-line-1 -->
+			</div>
+
+			<!-- 처음 .grid-content.gap-8 .mt-2 삭제 -->
+			<div class="grid-content gap-8 bg-color-white bd-bottom-1">
+				<!-- 처음 .title-type-6.bold .mt-3 삭제 -->
+				<p class="title-type-6 bold">매장정보</p>
+				<p class="txt-type-2 mt-3">BBQ치킨 구로디지털단지점</p>
+
+				<!-- 한개의 오더만 사용할경우 주문방법 영역 미 노출 -->
+				<p class="title-type-6 bold mt-3">주문방법</p>
+				<ul class="list-btn-col2 listOrder" data-tabnavi-target="tabnaviareaorder">
+					<!-- 활성화: a.is-on -->
+					<li><a href="javascript:void(0);" class="btn-round-8 is-on" data-tabnavi-btn="tab1"><span><span>배달</span></span></a></li>
+					<li><a href="javascript:void(0);" class="btn-round-8" data-tabnavi-btn="tab2"><span><span>픽업</span></span> <em class="icon-balloon posi-2">할인</em></a></li>
+				</ul>
+				<!-- 알림문구 -->
+				<!-- <p class="txt-notice-1">오픈이벤트 18,000원 이상 주문하면 2,000원 할인 (픽업일 경우만 해당됩니다)</p> -->
+				<!-- //한개의 오더만 사용할경우 주문방법 영역 미 노출 -->
+
+				<!-- 2021-01-05 픽업시 할인 탭 추가  -->
+				<div data-tabnavi-area="tabnaviareaorder">
+					<div data-tabnavi-cont="tab1"></div>
+					<div data-tabnavi-cont="tab2">
+						<div class="txt-type-7 mt-1">
+							<p class="font-point-3">포장할인 1000원</p>
+							<p class="font-point-5">10,000원 이상 포장 시 할인됩니다.</p>
+						</div>
+					</div>
+				</div>
+				<!-- // 2021-01-05 픽업시 할인 탭 추가  -->
+
+				<!-- tabnaviareaorder -->
+				<div data-tabnavi-area="tabnaviareaorder">
+					<div data-tabnavi-cont="tab1">
+						<!-- 배달 -->
+						<p class="title-type-6 bold mt-3">배달주소</p>
+						<p class="txt-type-5 font-point-3">서울특별시 서초구 잠원동 33-11 잠원동 월드메르디앙</p>
+						<p class="txt-type-2 mt-0 font-point-4">[도로명] 신반포로 45길 71 잠원동 월드메르디앙</p>
+						<div class="ipt-type-1 mt-2">
+							<input type="text" placeholder="상세주소를 입력해주세요">
+							<a href="javascript:void(0);" class="btn-clear"><span class="icon-close"><span>입력내용 삭제</span></span></a>
+						</div>
+
+						<div class="grid-col2 wd-auto mt-2">
+							<div class="left"><p class="title-type-6 bold">휴대폰번호</p></div>
+							<div class="right">
+								<input type="checkbox" id="check-1-1" class="ipt-check-1 bd-color-2">
+								<label for="check-1-1"><span class="ico-check"><span></span></span>안심번호 사용</label>
+							</div>
+						</div>
+						<div class="ipt-type-1 mt-2">
+							<!-- 기본값: 010 -->
+							<input type="tel" placeholder="휴대폰번호를 입력해주세요" value="010">
+							<a href="javascript:void(0);" class="btn-clear"><span class="icon-close"><span>입력내용 삭제</span></span></a>
+						</div>
+						<!-- //배달 -->
+					</div>
+					<div data-tabnavi-cont="tab2">
+						<!-- 픽업 -->
+						<p class="title-type-6 bold mt-3">휴대폰번호</p>
+						<div class="ipt-type-1 mt-2">
+							<!-- 기본값: 010 -->
+							<input type="tel" placeholder="휴대폰번호를 입력해주세요" value="010">
+							<a href="javascript:void(0);" class="btn-clear"><span class="icon-close"><span>입력내용 삭제</span></span></a>
+						</div>
+						<!-- //픽업 -->
+					</div>
+				</div>
+				<!-- //tabnaviareaorder -->
+			</div>
+
+			<!-- tabnaviareaorder -->
+			<div data-tabnavi-area="tabnaviareaorder">
+				<div data-tabnavi-cont="tab1">
+					<!-- 배달 -->
+					<div class="grid-content gap-8 bg-color-white bd-bottom-1 mt-2">
+						<!-- 처음 .title-type-6.bold .mt-3 삭제 -->
+						<p class="title-type-6 bold">주문시 요청사항 (선택)</p>
+						<p class="title-type-4 font-point-3 mt-2">가게 사장님께</p>
+						<div class="sel-type-1 mt-2">
+							<span class="icon-arrow"></span>
+							<select>
+								<option>요청사항을 선택해주세요</option>
+								<option>단무지 주지 마세요</option>
+								<option>맵지 않게 해주세요</option>
+								<option>양 많이 주세요</option>
+								<option value="self">직접입력</option>
+							</select>
+						</div>
+						<!-- 직접입력시 노출 -->
+						<div class="textarea-type-1 mt-2" style="display:none;">
+							<textarea rows="2" placeholder="50자 이내" maxlength="50"></textarea>
+							<a href="javascript:void(0);" class="btn-clear"><span class="icon-close"><span>입력내용 삭제</span></span></a>
+						</div>
+						<!-- //직접입력시 노출 -->
+						<input type="checkbox" id="check-2-1" class="ipt-check-1 bd-color-2 mt-2">
+						<label for="check-2-1"><span class="ico-check"><span></span></span>일회용 수저, 포크 안 주셔도 돼요. 일회용 수저, 포크 안 주셔도 돼요.</label>
+
+						<p class="title-type-4 font-point-3 mt-2">배달 기사님께</p>
+						<div class="sel-type-1 mt-2">
+							<span class="icon-arrow"></span>
+							<select>
+								<option>요청사항을 선택해주세요</option>
+								<option>문앞에 놔주세요</option>
+								<option>문앞에서 연락주세요</option>
+								<option value="self">직접입력</option>
+							</select>
+						</div>
+						<!-- 직접입력시 노출 -->
+						<div class="textarea-type-1 mt-2" style="display:none;">
+							<textarea rows="2" placeholder="50자 이내" maxlength="50"></textarea>
+							<a href="javascript:void(0);" class="btn-clear"><span class="icon-close"><span>입력내용 삭제</span></span></a>
+						</div>
+						<!-- //직접입력시 노출 -->
+					</div>
+					<!-- //배달 -->
+				</div>
+				<div data-tabnavi-cont="tab2">
+					<!-- 픽업 -->
+					<div class="grid-content gap-8 bg-color-white bd-bottom-1 mt-2">
+						<!-- 처음 .title-type-6.bold .mt-3 삭제 -->
+						<p class="title-type-6 bold">주문시 요청사항 (선택)</p>
+						<div class="textarea-type-1 mt-2">
+							<textarea rows="2" placeholder="50자 이내" maxlength="50"></textarea>
+							<a href="javascript:void(0);" class="btn-clear"><span class="icon-close"><span>입력내용 삭제</span></span></a>
+						</div>
+					</div>
+					<!-- //픽업 -->
+				</div>
+			</div>
+			<!-- //tabnaviareaorder -->
+
+			<div class="grid-content gap-8 bg-color-white bd-bottom-1 mt-2">
+				<!-- 처음 .title-type-6.bold .mt-3 삭제 -->
+				<p class="title-type-6 bold">결제수단</p>
+				<ul class="list-btn-colauto tabListPay" data-tabnavi-target="tabnaviareapay" data-list-width="50, 50, 33.33"> <!-- 3개일때만 33.33%, 외 50%-->
+					<!-- 활성화: a.is-on -->
+					<!-- 할인미사용: .icon-balloon 삭제 -->
+					<li><a href="javascript:void(0);" class="btn-round-8" data-tabnavi-btn="tab1"><span><span>PAYCO </span></span></a></li>
+					<li><a href="javascript:void(0);" class="btn-round-8" data-tabnavi-btn="tab2"><span><span>신용/ <br>체크카드</span></span></a></li>
+					<li><a href="javascript:void(0);" class="btn-round-8" data-tabnavi-btn="tab3"><span><span>경기도 <br>지역화폐</span></span></a></li>
+				</ul>
+				<!-- tabnaviareapay -->
+				<!-- <div data-tabnavi-area="tabnaviareapay">
+					<div data-tabnavi-cont="tab1">
+						<div class="grid-content gap-4 bg-color-2 bd-radius-1 mt-3">
+							<p class="title-type-5 mt-0 font-point-2">PAYCO 결제시 30% 할인! (BBQ 회원 대상 / 일부 매장 제외)</p>
+							<p class="txt-type-2 mt-3 font-point-4">할인 상품 : 후라이드/양념 (모든세트에 한하여 할 인이 적용됩니다.)</p>
+						</div>
+					</div>
+					<div data-tabnavi-cont="tab2"></div>
+					<div data-tabnavi-cont="tab3"></div>
+				</div> -->
+				<!-- //tabnaviareapay -->
+			</div>
+
+			<div class="grid-content gap-8 bg-color-white bd-bottom-1 mt-2">
+				<!-- 처음 .title-type-6.bold .mt-3 삭제 -->
+				<!-- 값 있을경우 .font-point-4 -> .font-point-2 교체 -->
+				<p class="title-type-6 bold">쿠폰<span class="title-type-5 ml-2 font-point-2">보유 : 2개</span></p>
+				<div class="grid-col2 wd-3 mt-3">
+					<div class="left">
+						<!-- 비활성화 .ipt-type-1.is-disabled -->
+						<!-- 버튼없음 .ipt-type-1.no-btn -->
+						<div class="ipt-type-1">
+							<input type="text" placeholder="쿠폰을 조회하세요" readonly>
+							<a href="javascript:void(0);" class="btn-clear"><span class="icon-close"><span>입력내용 삭제</span></span></a>
+						</div>
+					</div>
+					<div class="right">
+						<!-- 비활성화: a.is-disabled -->
+						<a href="javascript:void(0);" class="btn-round-8 size-2"><span><span>조회</span></span></a>
+					</div>
+				</div>
+				<!-- 알림문구 -->
+				<!-- <p class="txt-notice-1">쿠폰은 20,000원 이상 주문하셔야 사용이 가능하며 쿠폰을 사용하시면 결제수단 할인은 적용되지 않습니다.</p> -->
+
+				<!-- 값 있을경우 .font-point-4 -> .font-point-2 교체 -->
+				<p class="title-type-6 bold mt-3">충전금<span class="title-type-5 ml-2 font-point-2">잔액 : 12,000원</span></p>
+				<div class="grid-col2 wd-3 mt-3">
+					<div class="left">
+						<!-- 비활성화 .ipt-type-1.is-disabled -->
+						<!-- 버튼없음 .ipt-type-1.no-btn -->
+						<div class="ipt-type-1">
+							<input type="text" placeholder="0 원">
+							<a href="javascript:void(0);" class="btn-clear"><span class="icon-close"><span>입력내용 삭제</span></span></a>
+						</div>
+					</div>
+					<div class="right">
+						<!-- 비활성화: a.is-disabled -->
+						<a href="javascript:void(0);" class="btn-round-8 size-2"><span><span>사용</span></span></a>
+					</div>
+				</div>
+				<!-- 알림문구 -->
+				<!-- <p class="txt-notice-1">충전금 전액 결제시 ‘옵션상품’이 무료 증정됩니다. 전액사용으로 무료증정을 받아보세요. </p> -->
+			</div>
+
+			<div class="grid-content gap-8 bg-color-white bd-bottom-1 mt-2">
+				<!-- 처음 .title-type-6.bold .mt-3 삭제 -->
+				<p class="title-type-6 bold">현금영수증</p>
+				<ul class="list-input-col tabListCash" data-tabnavi-target="tabnaviareacash1">
+					<li>
+						<input type="radio" id="radio-1-1" class="ipt-radio-1 bd-color-2 color-2 is-on" name="radio-1" data-tabnavi-btn="tab1" checked>
+						<label for="radio-1-1"><span class="ico-radio"><span></span></span>신청</label>
+					</li>
+					<li>
+						<!-- 디폴트: 미신청 .is-on checked -->
+						<input type="radio" id="radio-1-2" class="ipt-radio-1 bd-color-2 color-2" name="radio-1" data-tabnavi-btn="tab2">
+						<label for="radio-1-2"><span class="ico-radio"><span></span></span>미신청</label>
+					</li>
+				</ul>
+				<!-- tabnaviareacash1 -->
+				<div data-tabnavi-area="tabnaviareacash1">
+					<div data-tabnavi-cont="tab1">
+						<div class="grid-content gap-4 bg-color-2 bd-radius-1 mt-3">
+							<ul class="list-input-1 mt-0 tabListCash" data-tabnavi-target="tabnaviareacash2">
+								<li>
+									<!-- 디폴트: 내 번호로 .is-on checked -->
+									<input type="radio" id="radio-2-1" class="ipt-radio-1 bd-color-2 color-2" name="radio-2" data-tabnavi-btn="tab1">
+									<label for="radio-2-1"><span class="ico-radio"><span></span></span>내 번호로 현금영수증 발행 <span class="txt-type-4 mt-2">(010-33**- 45**)</span></label>
+								</li>
+								<li>
+									<input type="radio" id="radio-2-2" class="ipt-radio-1 bd-color-2 color-2 is-on" name="radio-2" data-tabnavi-btn="tab2" checked>
+									<label for="radio-2-2"><span class="ico-radio"><span></span></span>다른 번호로 현금영수증 발행</label>
+								</li>
+							</ul>
+
+							<!-- tabnaviareacash2 -->
+							<div data-tabnavi-area="tabnaviareacash2">
+								<div data-tabnavi-cont="tab1"></div>
+								<div data-tabnavi-cont="tab2">
+									<div class="grid-line-2">
+										<ul class="list-input-col mt-2 tabListCash" data-tabnavi-target="tabnaviareacash3">
+											<li>
+												<!-- 디폴트: 개인소득공제 .is-on checked -->
+												<input type="radio" id="radio-3-1" class="ipt-radio-1 bd-color-2 color-2 is-on" name="radio-3" data-tabnavi-btn="tab1" checked>
+												<label for="radio-3-1"><span class="ico-radio"><span></span></span>개인소득공제</label>
+											</li>
+											<li>
+												<input type="radio" id="radio-3-2" class="ipt-radio-1 bd-color-2 color-2" name="radio-3" data-tabnavi-btn="tab2">
+												<label for="radio-3-2"><span class="ico-radio"><span></span></span>사업자 지출증빙용</label>
+											</li>
+										</ul>
+									</div>
+
+									<!-- tabnaviareacash3 -->
+									<div data-tabnavi-area="tabnaviareacash3">
+										<div data-tabnavi-cont="tab1">
+											<ul class="list-hyphen-col3">
+												<li class="wd-1">
+													<div class="sel-type-1">
+														<span class="icon-arrow"></span>
+														<select>
+															<option>010</option>
+															<option>011</option>
+															<option>019</option>
+														</select>
+													</div>
+												</li>
+												<li class="wd-2">
+													<!-- 입력내용 삭제 버튼 없음 .ipt-type-1.no-btn -->
+													<div class="ipt-type-1 no-btn">
+														<input type="tel" placeholder="4자리" maxlength="4">
+														<a href="javascript:void(0);" class="btn-clear"><span class="icon-close"><span>입력내용 삭제</span></span></a>
+													</div>
+												</li>
+												<li class="wd-2">
+													<!-- 입력내용 삭제 버튼 없음 .ipt-type-1.no-btn -->
+													<div class="ipt-type-1 no-btn">
+														<input type="tel" placeholder="4자리" maxlength="4">
+														<a href="javascript:void(0);" class="btn-clear"><span class="icon-close"><span>입력내용 삭제</span></span></a>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div data-tabnavi-cont="tab2">
+											<ul class="list-hyphen-col3">
+												<li>
+													<!-- 입력내용 삭제 버튼 없음 .ipt-type-1.no-btn -->
+													<div class="ipt-type-1 no-btn">
+														<input type="tel" placeholder="3자리" maxlength="3">
+														<a href="javascript:void(0);" class="btn-clear"><span class="icon-close"><span>입력내용 삭제</span></span></a>
+													</div>
+												</li>
+												<li>
+													<!-- 입력내용 삭제 버튼 없음 .ipt-type-1.no-btn -->
+													<div class="ipt-type-1 no-btn">
+														<input type="tel" placeholder="2자리" maxlength="2">
+														<a href="javascript:void(0);" class="btn-clear"><span class="icon-close"><span>입력내용 삭제</span></span></a>
+													</div>
+												</li>
+												<li>
+													<!-- 입력내용 삭제 버튼 없음 .ipt-type-1.no-btn -->
+													<div class="ipt-type-1 no-btn">
+														<input type="tel" placeholder="5자리" maxlength="5">
+														<a href="javascript:void(0);" class="btn-clear"><span class="icon-close"><span>입력내용 삭제</span></span></a>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!-- //tabnaviareacash3 -->
+								</div>
+							</div>
+							<!-- //tabnaviareacash2 -->
+						</div>
+					</div>
+					<div data-tabnavi-cont="tab2"></div>
+				</div>
+				<!-- //tabnaviareacash1 -->
+			</div>
+
+			<!-- 마지막 .grid-content.gap-8 .bd-bottom-1 삭제 -->
+			<div class="grid-content gap-8 bg-color-white mt-2">
+				<!-- 처음 .title-type-6.bold .mt-3 삭제 -->
+				<p class="title-type-6 bold">결제금액</p>
+
+				<!-- list-line-1 -->
+				<ul class="list-line-1 no-btn mt-2">
+					<li>
+						<!-- 처음 .grid-col2.wd-2 .mt-4 삭제 -->
+						<div class="grid-col2 wd-2">
+							<div class="left">
+								<p class="title-type-5 mt-0">총 주문금액</p>
+							</div>
+							<div class="right">
+								<p class="txt-type-2 mt-0">5,518,000 원</p>
+							</div>
+						</div>
+						<div class="grid-col2 wd-2 mt-4">
+							<div class="left">
+								<p class="title-type-5 mt-0">배달요금</p>
+							</div>
+							<div class="right">
+								<p class="txt-type-2 mt-0">3,000 원</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<p class="title-type-5 mt-0">할인금액</p>
+						<!-- 하위 리스트: 처음 .grid-col2.wd-2 .mt-4 추가-->
+						<div class="grid-col2 wd-2 mt-4">
+							<div class="left">
+								<p class="txt-type-2 mt-0 font-point-4">쿠폰</p>
+							</div>
+							<div class="right">
+								<p class="txt-type-2 mt-0 font-point-2">- 3,000 원</p>
+							</div>
+						</div>
+						<!-- 픽업 포장할인 -->
+						<!-- <div class="grid-col2 wd-2">
+							<div class="left">
+								<p class="txt-type-2 mt-0 font-point-4">포장할인</p>
+							</div>
+							<div class="right">
+								<p class="txt-type-2 mt-0 font-point-2">- 2,000 원</p>
+							</div>
+						</div> -->
+						<!-- 알림문구 -->
+						<!-- <p class="txt-notice-1 txt-align-right mt-2">18,000원 이상 주문하면 2,000원 할인</p> -->
+						<!-- //픽업 포장할인 -->
+					</li>
+				</ul>
+				<!-- //list-line-1 -->
+
+				<div class="grid-col2 wd-4 line-top">
+					<div class="left">
+						<p class="title-type-6 bold mt-2">총 결제금액</p>
+					</div>
+					<div class="right">
+						<p class="title-type-7 font-point-2">45,714,000 원</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- //bg-color-2 -->
+
+		<!-- box-bottom-fix -->
+		<div class="box-bottom-fix">
+			<p class="txt-type-4 font-point-3 txt-align-center">(배달 최소주문금액 15,000원)</p>
+			<a href="javascript:void(0);" class="btn-round-7"><span class="txt-price">193,500원</span><span>결제하기</span><span class="txt-num">(1개)</span></a>
+		</div>
+		<!-- 비활성화: .box-bottom-fix.is-disabled -->
+		<!-- <div class="box-bottom-fix is-disabled">
+			<a href="javascript:void(0);" class="btn-round-7"><span class="txt-price">193,500원</span><span>결제하기</span><span class="txt-num">(1개)</span></a>
+		</div> -->
+		<!-- //box-bottom-fix -->
+
+	</div>
+	<!-- //wrap -->
+
+	<!-- 공통: js -->
+	<script type="text/javascript" src="static/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="static/js/front.js"></script>
+	<!-- //공통: js -->
+
+	<!-- 해당페이지 js -->
+	<script>
+		$(document).ready(function(){
+			// scrollBottomFix 적용
+			$('.box-bottom-fix').scrollBottomFix();
+
+			// waTabNavi 적용
+			$('.listOrder').waTabNavi();
+			$('.tabListPay').waTabNavi();
+			$('.tabListCash').waTabNavi({
+				preventDefault: false
+			});
+
+			// tabListPay 자동너비
+			$('.tabListPay').each(function(){
+				var $this = $(this),
+					$tgList = $this.find('> li'),
+					widthArray = $this.attr('data-list-width').split(','),
+					listLength = $tgList.length;
+
+				if (widthArray[listLength - 1]) {
+					$tgList.css('width', widthArray[listLength - 1] + '%');
+				};
+			});
+
+			// ipt-type-1, textarea-type-1 입력내용 삭제 버튼 노출 처리
+			$('.ipt-type-1 > input, .textarea-type-1 > textarea').each(function(){
+				var $this = $(this);
+				if ($this.val() == '') {
+					$this.parent().removeClass('is-value');
+				}else{
+					$this.parent().addClass('is-value');
+				};
+			});
+			$('.ipt-type-1 > input, .textarea-type-1 > textarea').on('keyup focusin focusout',function(){
+				var $this = $(this);
+				if ($this.val() == '') {
+					$this.parent().removeClass('is-value');
+				}else{
+					$this.parent().addClass('is-value');
+				};
+			});
+
+			// 입력내용 삭제
+			$('input + .btn-clear, textarea + .btn-clear').on('click',function(e){
+				var $this = $(this);
+				$this.prev().val('').focus();
+				e.preventDefault();
+			});
+
+			// sel-type-1 직접입력 처리
+			$('.sel-type-1 > select').on('change',function(){
+				var $this = $(this),
+					tgVal = $this.val(),
+					$tgDiv = $this.parent().next('.textarea-type-1');
+
+				if (tgVal == 'self') {
+					$tgDiv.show().find('> textarea').focus();
+				}else{
+					$tgDiv.hide();
+				};
+			});
+
+		});
+	</script>
+	<!-- //해당페이지 js -->
+
+</body>
+</html>

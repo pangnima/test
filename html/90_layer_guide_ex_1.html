@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi">
+	<title>경기도 오더</title>
+
+	<!-- 공통: font preload -->
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Regular.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Medium.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Bold.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/GyeonggiTitle_Medium.woff" type="font/woff" as="font" crossorigin>
+	<!-- //공통: font preload -->
+
+	<!-- 공통: css -->
+	<link rel="stylesheet" href="static/css/style.css">
+	<!-- //공통: css -->
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- test용 -->
+		<div style="padding:20px;font-size:18px;line-height:26px;">
+			<div style="margin:50px 0;height:300px;width:50px;background-image: linear-gradient(#004c9b, #007bca);"></div>
+
+			<a href="javascript:void(0);" class="btn-layer-open" data-layer-target="#layer1">메뉴 검색 레이어팝업 열기</a>
+			<br>
+			<a href="javascript:void(0);" class="btn-layer-close" data-layer-target="#layer1">메뉴 검색 레이어팝업 닫기</a>
+
+			<div style="margin:50px 0;height:1000px;width:50px;background-image: linear-gradient(#004c9b, #007bca);"></div>
+		</div>
+		<!-- //test용 -->
+
+	</div>
+	<!-- //wrap -->
+
+	<!-- layer popup -->
+	<!-- 메뉴 검색 레이어팝업 -->
+	<!-- full 사이즈: .box-layer.is-full -->
+	<div class="box-layer is-full" id="layer1">
+		<div class="inner-layer">
+			<!-- box-layer-top -->
+			<div class="box-layer-top">
+				<p class="title">메뉴 검색</p>
+				<!-- 레이어팝업내 닫기 처리할 곳에 .dialog-close 추가 -->
+				<a href="javascript:void(0);" class="btn-close dialog-close"><span class="icon-close-2"><span>닫기</span></span></a>
+			</div>
+			<!-- //box-layer-top -->
+
+			<!-- box-layer-scroll -->
+			<div class="box-layer-scroll">
+
+				<div class="bg-color-2">
+					<div class="grid-content bg-color-white gap-4 bd-bottom-1">
+						<p class="title-type-6"><strong class="font-point-3">메뉴명</strong>을 입력하세요.</p>
+						<div class="box-search-2">
+							<input type="text">
+							<a href="javascript:void(0);" class="btn-search" title="검색"><span class="icon-search color-2"><span>검색</span></span></a>
+						</div>
+						<!-- 결과 없음: 삭제 -->
+						<!-- <p class="txt-type-2 font-point-4">검색결과 14개</p> -->
+						<!-- //결과 없음: 삭제 -->
+					</div>
+
+					<div class="grid-list-1 bd-0">
+						<!-- 결과 없음 -->
+						<!-- <div class="box-noresult">
+							검색 결과가 없습니다.
+						</div> -->
+						<!-- //결과 없음 -->
+
+						<!-- 결과 있음 -->
+						<!-- list-thumb-2 type-2 -->
+						<!-- <ul class="list-thumb-2 type-2">
+							생략
+						</ul> -->
+						<!-- //list-thumb-2 type-2 -->
+						<!-- //결과 있음 -->
+					</div>
+				</div>
+
+			</div>
+			<!-- //box-layer-scroll -->
+		</div><div class="inner-blank"></div>
+	</div>
+	<!-- //메뉴 검색 레이어팝업 -->
+
+	<!-- 로딩 레이어팝업 -->
+	<!-- 여백없음: .box-layer.is-tight -->
+	<div class="box-layer is-tight" id="layerloading">
+		<div class="inner-layer">
+			<!-- box-loading -->
+			<div class="box-loading">
+				<div class="icon-loading">
+					<span class="dots dot-1"></span>
+					<span class="dots dot-2"></span>
+					<span class="dots dot-3"></span>
+				</div>
+				데이터 처리중
+			</div>
+			<!-- //box-loading -->
+		</div><div class="inner-blank"></div>
+	</div>
+	<!-- //로딩 레이어팝업 -->
+	<!-- //layer popup -->
+
+	<!-- 공통: js -->
+	<script type="text/javascript" src="static/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="static/js/front.js"></script>
+	<!-- //공통: js -->
+
+	<!-- 해당페이지 js -->
+	<script>
+		$(document).ready(function(){
+			// waLayer 적용
+			$('.box-layer').waLayer({
+				fade: true
+			});
+			// 로딩레이어
+			$('#layerloading').waLayer({
+				fade: false //fade 기능 끄기
+			});
+
+			// test용
+			$('#layer1').waLayer('open');
+			$('#layerloading').waLayer('open');
+		});
+	</script>
+	<!-- //해당페이지 js -->
+
+</body>
+</html>

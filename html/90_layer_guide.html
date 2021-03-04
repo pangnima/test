@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi">
+	<title>경기도 오더</title>
+
+	<!-- 공통: font preload -->
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Regular.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Medium.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Bold.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/GyeonggiTitle_Medium.woff" type="font/woff" as="font" crossorigin>
+	<!-- //공통: font preload -->
+
+	<!-- 공통: css -->
+	<link rel="stylesheet" href="static/css/style.css">
+	<!-- //공통: css -->
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- test용 -->
+		<div style="padding:20px;font-size:18px;line-height:26px;">
+			[레이어팝업 가이드] <br>
+			<br>
+			위치는 .wrap 하단에 일괄 적용. <br>
+			<br>
+			레이어팝업에 .waLayer() 적용. <br>
+			<br>
+			여러개의 레이어팝업이 있을경우 마크업상 나중에 위치한 레이어팝업이 우선순위 높음. <br>
+			<br>
+			공통 열림 이벤트: <br>
+			사용하고 싶은 요소에 .btn-layer-open 추가 및 data-layer-target속성에 해당되는 레이어팝업 id값 넣기. <br>
+			<br>
+			열기 명령어: <br>
+			$(열고싶은 레이어팝업).waLayer('open'); <br>
+			<br>
+			공통 닫기 이벤트: <br>
+			사용하고 싶은 요소에 .btn-layer-close 추가 및 data-layer-target속성에 해당되는 레이어팝업 id값 넣기. <br>
+			<br>
+			닫기 명령어: <br>
+			$(닫고싶은 레이어팝업).waLayer('close'); <br>
+			<br>
+
+			<br>
+			<br>
+			<br>
+			<a href="javascript:void(0);" class="btn-layer-open" data-layer-target="#layer1">etc형 레이어팝업 1 열기</a>
+			<br>
+			<a href="javascript:void(0);" class="btn-layer-open" data-layer-target="#layer2">etc형 레이어팝업 2 열기</a>
+			<br>
+			<a href="javascript:void(0);" class="btn-layer-open" data-layer-target="#layer3">etc형 레이어팝업 3 열기</a>
+			<br>
+			<a href="javascript:void(0);" class="btn-layer-open" data-layer-target="#layer4">etc형 레이어팝업 4 열기</a>
+			<br>
+			<br>
+			<a href="javascript:void(0);" class="btn-layer-close" data-layer-target="#layer1">etc형 레이어팝업 1 닫기</a>
+
+
+			<div style="margin:50px 0;height:1000px;width:50px;background-image: linear-gradient(#004c9b, #007bca);"></div>
+		</div>
+		<!-- //test용 -->
+
+	</div>
+	<!-- //wrap -->
+
+	<!-- layer popup -->
+	<!-- etc형 레이어팝업 1 -->
+	<div class="box-layer" id="layer1">
+		<div class="inner-layer">
+			<div class="grid-layer">
+
+				<p class="txt-type-3 mt-0">
+					지금은 주문할 수 없습니다. [재료소진] <br>
+					<span class="font-point-3 font-medium">매장으로 문의해주세요.</span>
+				</p>
+				<p class="txt-type-4 mt-3 font-point-4 txt-align-right">청춘핫도그 홍대 2호점</p>
+
+			</div>
+
+			<!-- 레이어팝업내 닫기 처리할 곳에 .dialog-close 추가 -->
+			<a href="javascript:void(0);" class="btn-rect-1 dialog-close">확인</a>
+		</div><div class="inner-blank"></div>
+	</div>
+	<!-- //etc형 레이어팝업 1 -->
+
+	<!-- etc형 레이어팝업 2 -->
+	<div class="box-layer" id="layer2">
+		<div class="inner-layer">
+			<div class="grid-layer">
+
+				<p class="txt-type-3 mt-0">지금은 주문할 수 없습니다. [재료소진]</p>
+				<div class="txt-type-2">
+					<p><strong class="font-underline">휴무일자</strong></p>
+					<p class="font-point-4">2월 14일 (목) ~ 2월 18일 (화)</p>
+				</div>
+				<p class="txt-type-4 mt-3 font-point-4 txt-align-right">청춘핫도그 홍대 2호점</p>
+
+			</div>
+
+			<!-- 레이어팝업내 닫기 처리할 곳에 .dialog-close 추가 -->
+			<a href="javascript:void(0);" class="btn-rect-1 dialog-close">확인</a>
+		</div><div class="inner-blank"></div>
+	</div>
+	<!-- //etc형 레이어팝업 2 -->
+
+	<!-- etc형 레이어팝업 3 -->
+	<div class="box-layer" id="layer3">
+		<div class="inner-layer">
+			<div class="grid-layer">
+
+				<p class="txt-type-3 mt-0">입력하신 주소는 <span class="font-point-3 font-medium">배달이 불가</span>합니다.</p>
+				<div class="txt-type-2">
+					<p><strong class="font-underline">배달 가능 지역</strong></p>
+					<p class="font-point-4">삼평동, 이매동, 서현동, 정자동, 야탑동, 백현동, 치평동, 수내동</p>
+				</div>
+
+			</div>
+
+			<!-- 레이어팝업내 닫기 처리할 곳에 .dialog-close 추가 -->
+			<a href="javascript:void(0);" class="btn-rect-1 dialog-close">확인</a>
+		</div><div class="inner-blank"></div>
+	</div>
+	<!-- //etc형 레이어팝업 3 -->
+
+	<!-- etc형 레이어팝업 4 -->
+	<div class="box-layer" id="layer4">
+		<div class="inner-layer">
+			<div class="grid-layer">
+
+				<p class="txt-type-3 mt-0">
+					<span class="font-point-3 font-medium">배달 가능 지역</span>을 꼭 확인하세요! <br>
+					배달 불가 지역은 주문이 거절될 수 있습니다.
+				</p>
+				<div class="txt-type-2">
+					<p><strong class="font-underline">배달 가능 지역</strong></p>
+					<p class="font-point-4">삼평동, 이매동, 서현동, 정자동, 야탑동, 백현동, 치평동, 수내동</p>
+				</div>
+				<div class="txt-type-2">
+					<p><strong class="font-underline">배달 할증 요금</strong></p>
+					<div class="grid-col2 wd-6">
+						<div class="left">
+							<p class="font-point-2">1,000원</p>
+						</div>
+						<div class="right">
+							<p class="font-point-4 txt-align-left">구로동, 구로1동, 구로2동, 구로3동, 구로4동, 구로5동</p>
+						</div>
+					</div>
+					<div class="grid-col2 wd-6">
+						<div class="left">
+							<p class="font-point-2">2,000원</p>
+						</div>
+						<div class="right">
+							<p class="font-point-4 txt-align-left">신림동, 신림1동, 신림2동, 신림3동, 신림4동</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- 레이어팝업내 닫기 처리할 곳에 .dialog-close 추가 -->
+			<a href="javascript:void(0);" class="btn-rect-1 dialog-close">확인</a>
+		</div><div class="inner-blank"></div>
+	</div>
+	<!-- //etc형 레이어팝업 4 -->
+	<!-- //layer popup -->
+
+	<!-- 공통: js -->
+	<script type="text/javascript" src="static/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="static/js/front.js"></script>
+	<!-- //공통: js -->
+
+	<!-- 해당페이지 js -->
+	<script>
+		$(document).ready(function(){
+			// waLayer 적용
+			$('.box-layer').waLayer({
+				fade: true
+			});
+
+			// test용
+			// $('#layer1').waLayer('open');
+		});
+	</script>
+	<!-- //해당페이지 js -->
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+$gray:linear-gradient(-45deg,
+	rgba(255, 255, 255, 0) 0%,
+	rgba(255, 255, 255, 0) 35%,
+	rgba(255, 255, 255, .1) 40%,
+	rgba(255, 255, 255, .2) 45%,
+	rgba(255, 255, 255, .4) 50%,
+	rgba(255, 255, 255, .2) 55%,
+	rgba(255, 255, 255, .1) 60%,
+	rgba(255, 255, 255, 0) 65%,
+	rgba(255, 255, 255, 0) 100%);
+@keyframes loading{
+	0%{background-position:200% 0;}
+	100%{background-position:-200% 0;}
+}
+
+.row{display:flex; flex-wrap:wrap; width:100%;
+	&+ .row {margin-top:10px;}
+	&.center{justify-content:center;}
+	&.right{justify-content:right;}
+
+	[class^="col"]{height:40px;
+		display:block; position:relative; background-size:200% 100% !important; background-color:$gray; background-color:#f1f1f1; background-image:$gray !important; background-repeat:no-repeat; color:transparent !important; z-index:999; font-size:0 !important;animation-duration:1.5s; animation-iteration-count:infinite; animation-name:loading; animation-timing-function:linear; animation-fill-mode:forwards;
+		&.ml-auto{margin-left:auto;}
+	}
+	.col{max-width:100%; flex-basis:0; flex-grow:1;}
+	.col-auto{width:auto; max-width:none; flex:0 0 auto;}
+	.col-1{max-width:8.333333%; flex:0 0 8.333333%;}
+	.col-2{max-width:16.666667%;flex:0 0 16.666667%;}
+	.col-3{max-width:25%;flex:0 0 25%;}
+	.col-4{max-width:33.333333%;flex:0 0 33.333333%;}
+	.col-5{max-width:41.666667%;flex:0 0 41.666667%;}
+	.col-6{max-width:50%;flex:0 0 50%;}
+	.col-7{max-width:58.333333%;flex:0 0 58.333333%;}
+	.col-8{max-width:66.666667%;flex:0 0 66.666667%;}
+	.col-9{max-width:75%;flex:0 0 75%;}
+	.col-10{max-width:83.333333%;flex:0 0 83.333333%;}
+	.col-11{max-width:91.666667%;flex:0 0 91.666667%;}
+	.col-12{max-width:100%;flex:0 0 100%;
+		& + [class^="col-"]{margin-top:5px;}
+	}
+}
+
+[loading]{box-sizing:border-box;}
+[loading="banner"] .col-12{padding-top:calc(160 / 360 * 100%); min-height: auto;}
+
+
+[loading="category"] {
+	position: relative;
+	&:after{
+		content: "";
+		display:block; position: absolute;
+		background-size:200% 100% !important;
+		background-image:$gray !important; background-repeat:no-repeat; color:transparent !important; z-index:999; font-size:0 !important;animation-duration:1.5s; animation-iteration-count:infinite; animation-name:loading; animation-timing-function:linear; animation-fill-mode:forwards;
+		left:0; top:0; right:0; bottom:0;
+	}
+	ul{display:flex; padding-bottom:10px; flex-wrap:wrap; justify-content:center; flex:1; width:100%;
+		li{margin-top:10px; text-align:center; flex:0 0 25%;
+			.icon-menu{background:#e4e8ed; border-radius:50%;}
+			.txt{display:block; background:#e4e8ed; width:58px; height:15px; margin:5px auto 0 !important; border-radius:3px;}
+		}
+	}
+}
+
+[loading="eventList"] {
+	.row + .row {margin-top:34px;}
+	.img-thumb{height:140px;}
+	.title{height:20px; margin-top:13px;}
+	.txt{height:14px; margin-top:4px;}
+}
+
+[loading="popular"] {
+	.row + .row {margin-top:14px;}
+	[class^="col-"]{height:auto; background-color:#e5eaef;}
+	.img-thumb{height:113px; flex:0 0 113px}
+	.txt-wrap {
+		flex:1; margin-left:5%; background-image:none !important;
+		.icon{flex:0 0 34px; height:34px;}
+		.title{height:16px; margin-top:8px;}
+		.txt{height:12px; margin-top:4px;}
+	}
+}
+
+[loading="card"] {
+	display:flex;overflow:hidden;
+	.row + .row{margin-top:13px;}
+	> .row{
+		box-sizing:border-box;width:84.75%;margin-top:0;padding-right:10px;flex-shrink:0;
+		+ .row{margin-top:0;}
+	}
+	[class^="col-"] {
+		height: auto;
+		&.bg-color-none{background-color:transparent;}
+	}
+	.title-1{height:30px;margin-bottom:15px;background-color:rgba(30,29,29,0.05);}
+	.img-thumb{height:80px;background-color:rgba(30,29,29,0.05);border-radius:10px;flex:0 0 80px;}
+	.txt-wrap {
+		flex:1;margin-left:3%;
+		.icon{flex:0 0 38px;height:38px;background-color:rgba(30,29,29,0.05);}
+		.title{height:18px;margin-top:8px;background-color:rgba(30,29,29,0.05);}
+		.txt{height:16px;margin-top:4px;background-color:rgba(30,29,29,0.05);}
+	}
+}
+
+[loading="menuList"]{
+	padding:5px 0;
+	justify-content: space-between;
+	// .col-2 {height:30px; margin:10px 0;}
+}
+
+
+[loading="store"]{
+	padding:20px 20px 0;
+	.img-thumb{height:94px; flex:0 0 94px}
+	.txt-wrap {
+		flex:1; margin-left:5%; background-image:none !important;
+		.txt{height:12px; margin-top:4px;}
+	}
+}
+
+[loading="couponList"]{
+	padding:0 20px 15px 20px;
+	[class^=col-]{margin-top: 10px;
+		&:first-child{margin-top:0;}
+	}
+}
+
+[loading="storeMenu"]{
+	> .row{ padding:15px;}
+	.txt-wrap {background-image: none !important; background: none;
+		.txt-1{height:20px;}
+		.txt-2{height:14px; margin-top:10px;}
+		.txt-3{height:14px; margin-top:6px;}
+	}
+	.img-thumb{ flex:0 0 100px; height:100px;}
+}
+
+
+
+[loading="footer"]{
+	[class^="col-"]{height:20px; margin-top:4px;
+		&:first-child{margin-top:0;}
+	}
+}
+
+// [loading="category"]:after{content:""; position:absolute; top:0; left:0; right:0; bottom:0; background-size:200% 100%; background-color:$gray; background-image:$gray; background-repeat:no-repeat; z-index:999;
+// animation-duration:1.5s; animation-iteration-count:infinite; animation-name:loading; animation-timing-function:linear; animation-fill-mode:forwards; }
+// [loading="category"] [class^="icon-menu"]{display:inline-block; background:#e4e8ed; width:58px; height:58px; border-radius:50%;
+// }
+// [loading="category"] .txt{background:#e4e8ed; width:58px; margin:5px auto 0 !important; color:transparent; white-space:nowrap;
+// }
+// .list-box-1{.txt-wrap{background:none !important;
+// }
+// 	.title{background-color:#f1f1f1; width:98px;
+// color:transparent; font-size:0 !important; }
+// 	.txt{background-color:#f1f1f1; color:transparent; font-size:0 !important;
+// }}
+// .list-thumb-1{.img-thumb{background-color:#e5eaef !important;
+// }
+// 	[class^="icon-"]{background-color:#e5eaef; width:40px;
+// }
+// 	.title{background-color:#e5eaef; color:transparent;
+// 		.icon-coupon{display:none;
+// }}
+// 	.list-1{display:none !important;
+// }
+// 	.txt{background-color:#e5eaef; width:80px;
+// color:transparent; }}
+// .list-thumb-2{.txt-1{width:60%;
+// }
+// 	.txt-2{width:80%;
+// }
+// 	.txt-3{width:40%;
+// }}

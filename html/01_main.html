@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi">
+	<title>경기도 오더</title>
+
+	<!-- 공통: font preload -->
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Regular.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Medium.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Bold.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/GyeonggiTitle_Medium.woff" type="font/woff" as="font" crossorigin>
+	<!-- //공통: font preload -->
+
+	<!-- 공통: css -->
+	<link rel="stylesheet" href="static/css/style.css">
+	<!-- //공통: css -->
+</head>
+<body>
+
+	<!-- wrap -->
+	<div class="wrap height-full bg-color-1">
+		<!-- Rolling Banner -->
+		<div class="rolling-banner">
+			<!-- 페이지 갱신이 가능한 경우 -->
+			<div class="banner-item"><strong>오늘, 뭐</strong><span class="font-point-1">끌려요<em>?</em></span></div>
+			<!-- // 페이지 갱신이 가능한 경우 -->
+
+			<!-- 페이지 갱신이 가능한 경우 최대 -->
+			<div class="banner-item" style="height:200px;"><strong>오늘, 뭐</strong><span class="font-point-1">끌려요<em>?</em></span></div>
+			<!-- // 페이지 갱신이 가능한 경우  최대-->
+
+			<!-- 로딩중 배너 롤링 -->
+			<div class="banner-item"><strong>치킨</strong><span class="font-point-1">끌려요</span></div>
+			<div class="banner-item"><strong>탕수육</strong><span class="font-point-1">끌려요</span></div>
+			<div class="banner-item"><strong>회</strong><span class="font-point-1">끌려요</span></div>
+			<!-- // 로딩중 배너 롤링 -->
+
+
+			<!-- 갱신완료시  -->
+			<!-- CASE-1 오늘은 치킨?-->
+			<div class="banner-item case-1">
+				<strong>오늘은</strong><span class="font-point-1">치킨?<i class="icon-menu-4"></i></span>
+			</div>
+			<!-- // CASE-1 다 끌려요 -->
+
+			<!-- CASE-2 다 끌려요-->
+			<div class="banner-item case-2">
+				<strong>다<i class="icon-menu-1"></i></strong><span class="font-point-1">끌려요<em>!</em></span>
+			</div>
+			<!-- // CASE-2 다 끌려요 -->
+
+			<!-- CASE-3 그냥 다 시켜도 되나요?-->
+			<div class="banner-item case-3">
+				<i class="icon-menu-8"></i>
+				<i class="icon-menu-13"></i>
+				<p>그냥 다 시켜도 되나요??</p>
+				<i class="icon-menu-4"></i>
+				<i class="icon-menu-6"></i>
+			</div>
+			<!-- // CASE-3 그냥 다 시켜도 되나요? -->
+			<!-- // 갱신완료시  -->
+		</div>
+		<!-- // Rolling Banner -->
+
+		<!-- swiper-banner -->
+		<div class="swiper-banner">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<!-- list -->
+					<div class="swiper-slide"><a href="#none"><img src="static/images/@none_1.png" alt="8월 1주차 우리동네만 8,000원 할인"></a></div>
+					<div class="swiper-slide"><a href="#none"><img src="static/images/@none_1.png" alt="8월 1주차 우리동네만 8,000원 할인"></a></div>
+					<div class="swiper-slide"><a href="#none"><img src="static/images/@none_1.png" alt="8월 1주차 우리동네만 8,000원 할인"></a></div>
+					<div class="swiper-slide"><a href="#none"><img src="static/images/@none_1.png" alt="8월 1주차 우리동네만 8,000원 할인"></a></div>
+					<div class="swiper-slide"><a href="#none"><img src="static/images/@none_1.png" alt="8월 1주차 우리동네만 8,000원 할인"></a></div>
+					<!-- //list -->
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<!-- //swiper-banner -->
+
+		<div class="grid-content">
+			<!-- box-search -->
+			<div class="box-search">
+				<input type="text" id="iptSearch">
+				<label for="iptSearch" class="font-ellipsis">먹고 싶은 <span class="font-highlight"><span>메뉴, 매장</span><span class="highlight-bar"></span></span>을 검색하세요!</label>
+				<a href="javascript:void(0);" class="btn-search" title="검색"><span class="icon-search"><span>검색</span></span></a>
+			</div>
+			<!-- //box-search -->
+
+			<h2 class="title-type-1 pl-2"><span class="font-point-1">오늘,</span> 뭐 드실래요?</h2>
+
+			<!-- 2021-02-15 메뉴리스트 순서 변경 및 추가 -->
+			<!-- list-menu-1 -->
+			<div class="list-menu-1">
+				<ul>
+					<!-- list -->
+					<li><a href="#none"><span class="icon-menu-1"></span><span class="txt">전체보기</span></a></li>
+					<li><a href="#none"><span class="icon-menu-2"></span><span class="txt">카페</span></a></li>
+					<li><a href="#none"><span class="icon-menu-3"></span><span class="txt">한식</span></a></li>
+					<li><a href="#none"><span class="icon-menu-4"></span><span class="txt">치킨</span></a></li>
+					<li><a href="#none"><span class="icon-menu-5"></span><span class="txt">중식</span></a></li>
+					<li><a href="#none"><span class="icon-menu-6"></span><span class="txt">분식</span></a></li>
+					<li><a href="#none"><span class="icon-menu-7"></span><span class="txt">족발·보쌈</span></a></li>
+					<li><a href="#none"><span class="icon-menu-8"></span><span class="txt">피자·양식</span></a></li>
+					<li><a href="#none"><span class="icon-menu-9"></span><span class="txt">찜·탕</span></a></li>
+					<li><a href="#none"><span class="icon-menu-10"></span><span class="txt">일식·돈까스</span></a></li>
+					<li><a href="#none"><span class="icon-menu-11"></span><span class="txt">아시안</span></a></li>
+					<li><a href="#none"><span class="icon-menu-12"></span><span class="txt">야식</span></a></li>
+					<li><a href="#none"><span class="icon-menu-13"></span><span class="txt">프랜차이즈</span></a></li>
+					<li><a href="#none"><span class="icon-menu-14"></span><span class="txt">1인분</span></a></li>
+					<li><a href="#none"><span class="icon-menu-15"></span><span class="txt">픽업</span></a></li>
+				</ul>
+			</div>
+			<!-- //list-menu-1 -->
+		</div>
+
+		<div class="grid-content gap-2 bg-color-white">
+			<h2 class="title-type-1 mt-0">오늘 주문하면 <span class="font-point-2">#할인</span> 혜택이!</h2>
+
+			<!-- list-box-1 -->
+			<ul class="list-box-1">
+				<!-- list -->
+				<li>
+					<a href="#none">
+						<span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span>
+						<span class="txt-wrap is-coupon"> <!-- 쿠폰 아이콘 .is-coupon -->
+							<span class="title">본가 안동찜닭</span>
+							<!-- 20201104 수정 font-ellipsis 클래스 추가 -->
+							<span class="txt font-ellipsis">한마리찜닭, 두마리찜닭</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#none">
+						<span class="img-thumb" style="background-image:url('static/images/@none_3.png');"></span>
+						<span class="txt-wrap is-coupon"> <!-- 쿠폰 아이콘 .is-coupon -->
+							<span class="title">전주 백정 한식야식</span>
+							<span class="txt font-ellipsis">한마리찜닭, 두마리찜닭</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#none">
+						<span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span>
+						<span class="txt-wrap is-coupon"> <!-- 쿠폰 아이콘 .is-coupon -->
+							<span class="title">본가 안동찜닭본가 안동찜닭본가 안동찜닭본가 안동찜닭</span>
+							<span class="txt font-ellipsis">한마리찜닭, 두마리찜닭한마리찜닭, 두마리찜닭한마리찜닭, 두마리찜닭한마리찜닭, 두마리찜닭</span>
+						</span>
+					</a>
+				</li>
+				<!-- //list -->
+			</ul>
+			<!-- //list-box-1 -->
+		</div>
+
+		<!-- 210121 삭제 -->
+		<!-- <div class="grid-content gap-3">
+			<h2 class="title-type-1 mt-0"><span class="font-point-3">인기</span>있는 동네 <span class="font-point-1">맛집</span></h2>
+
+			<ul class="list-thumb-1">
+				<li>
+					<a href="#none">
+						<span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span>
+						<span class="txt-wrap">
+							<span class="icon-1st">1st</span>
+							<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+							<span class="list-1">
+								<span><span class="icon-star">별점</span>4.8</span>
+								<span><span class="icon-location">거리</span>648m</span>
+							</span>
+							<span class="txt mt-2 font-ellipsis">한마리찜닭, 두마리찜닭,치즈찜닭</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#none">
+						<span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span>
+						<span class="txt-wrap">
+							<span class="icon-2nd">2nd</span>
+							<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+							<span class="list-1">
+								<span><span class="icon-star">별점</span>4.8</span>
+								<span><span class="icon-location">거리</span>648m</span>
+							</span>
+							<span class="txt mt-2 font-ellipsis">한마리찜닭, 두마리찜닭,치즈찜닭</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#none">
+						<span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span>
+						<span class="txt-wrap">
+							<span class="icon-3rd">3rd</span>
+							<span class="title">두마리 찜닭 홍대점 두마리 찜닭 홍대점 두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+							<span class="list-1">
+								<span><span class="icon-star">별점</span>4.8</span>
+								<span><span class="icon-location">거리</span>648m</span>
+							</span>
+							<span class="txt mt-2 font-ellipsis">한마리찜닭, 두마리찜닭,치즈찜닭한마리찜닭, 두마리찜닭,치즈찜닭한마리찜닭, 두마리찜닭,치즈찜닭</span>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div> -->
+		<!-- //210121 삭제 -->
+
+		<!-- 210121 추가 -->
+		<!-- swiper-card -->
+		<div class="swiper-card">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<!-- list -->
+					<div class="swiper-slide">
+						<!-- 인기 맛집 bg-color-1 -->
+						<div class="grid-round-1 bg-color-1">
+							<h2 class="title-type-1 mt-0">우리동네 <span class="font-point-1">인기 맛집</span></h2>
+
+							<!-- list-thumb-1 -->
+							<ul class="list-thumb-1">
+								<!-- list -->
+								<li>
+									<a href="#none">
+										<span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span>
+										<span class="txt-wrap">
+											<span class="icon-1st">1st</span>
+											<span class="title font-ellipsis">두마리 찜닭 홍대점</span>
+											<span class="list-1">
+												<span><span class="icon-star">별점</span>4.8</span>
+												<span><span class="icon-location">거리</span>648m</span>
+												<span><span class="icon-coupon m-2">쿠폰</span></span>
+											</span>
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										<span class="img-thumb" style="background-image:url('static/images/@none_3.png');"></span>
+										<span class="txt-wrap">
+											<span class="icon-2nd">2nd</span>
+											<span class="title font-ellipsis">두마리 찜닭 홍대점</span>
+											<span class="list-1">
+												<span><span class="icon-star">별점</span>4.8</span>
+												<span><span class="icon-location">거리</span>648m</span>
+												<span><span class="icon-coupon m-2">쿠폰</span></span>
+											</span>
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										<span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span>
+										<span class="txt-wrap">
+											<span class="icon-3rd">3rd</span>
+											<span class="title font-ellipsis">두마리 찜닭 홍대점 두마리 찜닭 홍대점 두마리 찜닭 홍대점</span>
+											<span class="list-1">
+												<span><span class="icon-star">별점</span>4.8</span>
+												<span><span class="icon-location">거리</span>1648m</span>
+												<span><span class="icon-coupon m-2">쿠폰</span></span>
+											</span>
+										</span>
+									</a>
+								</li>
+								<!-- //list -->
+							</ul>
+							<!-- //list-thumb-1 -->
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<!-- 단골손님 bg-color-3 -->
+						<div class="grid-round-1 bg-color-3">
+							<h2 class="title-type-1 mt-0"><span class="font-point-2">단골손님</span>이 많아요</h2>
+
+							<!-- list-thumb-1 -->
+							<ul class="list-thumb-1">
+								<!-- list -->
+								<li>
+									<a href="#none">
+										<span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span>
+										<span class="txt-wrap">
+											<span class="icon-1st">1st</span>
+											<span class="title font-ellipsis">두마리 찜닭 두마리 찜닭 두마리 찜닭 두마리 찜닭 홍대점</span>
+											<span class="list-1">
+												<span><span class="icon-star">별점</span>4.8</span>
+												<span><span class="icon-location">거리</span>648m</span>
+												<span><span class="icon-coupon m-2">쿠폰</span></span>
+											</span>
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										<span class="img-thumb" style="background-image:url('static/images/@none_3.png');"></span>
+										<span class="txt-wrap">
+											<span class="icon-2nd">2nd</span>
+											<span class="title font-ellipsis">두마리 찜닭 홍대점</span>
+											<span class="list-1">
+												<span><span class="icon-star">별점</span>4.8</span>
+												<span><span class="icon-location">거리</span>648m</span>
+												<span><span class="icon-coupon m-2">쿠폰</span></span>
+											</span>
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										<span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span>
+										<span class="txt-wrap">
+											<span class="icon-3rd">3rd</span>
+											<span class="title font-ellipsis">두마리 찜닭 홍대점 두마리 찜닭 홍대점 두마리 찜닭 홍대점</span>
+											<span class="list-1">
+												<span><span class="icon-star">별점</span>4.8</span>
+												<span><span class="icon-location">거리</span>1648m</span>
+												<span><span class="icon-coupon m-2">쿠폰</span></span>
+											</span>
+										</span>
+									</a>
+								</li>
+								<!-- //list -->
+							</ul>
+							<!-- //list-thumb-1 -->
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<!-- 후기 bg-color-4 -->
+						<div class="grid-round-1 bg-color-4">
+							<h2 class="title-type-1 mt-0"><span class="font-point-6">후기</span>가 많아요</h2>
+
+							<!-- list-thumb-1 -->
+							<ul class="list-thumb-1">
+								<!-- list -->
+								<li>
+									<a href="#none">
+										<span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span>
+										<span class="txt-wrap">
+											<span class="icon-1st">1st</span>
+											<span class="title font-ellipsis">두마리 찜닭 홍대점</span>
+											<span class="list-1">
+												<span><span class="icon-star">별점</span>4.8</span>
+												<span><span class="icon-location">거리</span>648m</span>
+												<span><span class="icon-coupon m-2">쿠폰</span></span>
+											</span>
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										<span class="img-thumb" style="background-image:url('static/images/@none_3.png');"></span>
+										<span class="txt-wrap">
+											<span class="icon-2nd">2nd</span>
+											<span class="title font-ellipsis">두마리 찜닭 두마리 찜닭 두마리 찜닭 홍대점</span>
+											<span class="list-1">
+												<span><span class="icon-star">별점</span>4.8</span>
+												<span><span class="icon-location">거리</span>648m</span>
+												<span><span class="icon-coupon m-2">쿠폰</span></span>
+											</span>
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="#none">
+										<span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span>
+										<span class="txt-wrap">
+											<span class="icon-3rd">3rd</span>
+											<span class="title font-ellipsis">두마리 찜닭 홍대점 두마리 찜닭 홍대점 두마리 찜닭 홍대점</span>
+											<span class="list-1">
+												<span><span class="icon-star">별점</span>4.8</span>
+												<span><span class="icon-location">거리</span>1648m</span>
+												<span><span class="icon-coupon m-2">쿠폰</span></span>
+											</span>
+										</span>
+									</a>
+								</li>
+								<!-- //list -->
+							</ul>
+							<!-- //list-thumb-1 -->
+						</div>
+					</div>
+					<!-- //list -->
+				</div>
+			</div>
+		</div>
+		<!-- //swiper-card -->
+		<!-- //210121 추가 -->
+
+		<!-- footer info -->
+		<div class="grid-content gap-9 bg-color-white">
+			<p class="title-type-8">코리아경기도 주식회사</p>
+			<div class="txt-type-6">
+				<p>대표이사 : 이석훈 | 사업자등록번호 : 696-88-00546</p>
+				<p>통신판매업 : XXXXXXXXXXXXXXX</p>
+				<p>주소 : 경기도성남시 분당구 판교로289번길 20(삼평동),13488</p>
+				<p>대표전화 : 031-5171-5555</p>
+			</div>
+
+			<!-- 2020-11-30 푸터 정보 추가 -->
+			<hr class="divider m-10">
+			<div class="txt-type-6 font-point-4">
+				<p>
+					배달특급은 통신판매중개자로서 상품 정보 및 거래에 대한 책임을
+					지지 않습니다. 주문정보 및 거래 등과 관련한 정확한 정보는 해당
+					판매자에게 확인 바랍니다.
+				</p>
+			</div>
+		</div>
+		<!-- // footer info -->
+
+		<!-- 2020-12-17 장바구니 추가 -->
+		<aside class="floating-box cart">
+			<a href="javascript:void(0);" class="btn-cart">장바구니<span class="count">6</span></a>
+		</aside>
+		<!-- // 2020-12-17 장바구니 추가 -->
+	</div>
+	<!-- //wrap -->
+
+	<!-- 공통: js -->
+	<script type="text/javascript" src="static/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="static/js/front.js"></script>
+	<!-- //공통: js -->
+
+	<!-- 해당페이지 js -->
+	<script type="text/javascript" src="static/js/swiper.fix.js"></script>
+	<script>
+		$(document).ready(function(){
+			// .swiper-banner swiper.js 적용
+			var swiperBanner = new Swiper('.swiper-banner > .swiper-container', {
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: false,
+				},
+				loop: true,
+				speed: 300,
+				autoHeight: true,
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'fraction',
+				}
+			});
+
+			// .box-search placeholder 기능 적용
+			$('.box-search > input').applyPlaceholder();
+
+			// 210121 추가
+			// .swiper-card swiper.js 적용
+			var swiperCard = new Swiper('.swiper-card > .swiper-container', {
+				slidesPerView: 1.18,
+				centeredSlides: true,
+				centeredSlidesBounds: true,
+				normalizeSlideIndex: false,
+				freeMode: true,
+				freeModeSticky: true,
+				freeModeMomentumRatio: 0.5,
+				freeModeMomentumVelocityRatio: 0.1,
+			});
+			// //210121 추가
+		});
+	</script>
+	<!-- //해당페이지 js -->
+</body>
+</html>

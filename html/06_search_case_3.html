@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi">
+	<title>경기도 오더</title>
+
+	<!-- 공통: font preload -->
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Regular.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Medium.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Bold.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/GyeonggiTitle_Medium.woff" type="font/woff" as="font" crossorigin>
+	<!-- //공통: font preload -->
+
+	<!-- 공통: css -->
+	<link rel="stylesheet" href="static/css/style.css">
+	<!-- //공통: css -->
+</head>
+<body>
+
+	<!-- test 버튼(개발시 삭제) -->
+	<a href="javascript:void(0);" id="btnTest" style="position:fixed;top:50%;left:0;padding:20px;background:pink;z-index:9000;">메뉴상세 노출/비노출 버튼</a>
+	<!-- //test 버튼(개발시 삭제) -->
+
+	<!-- #pageSearch(검색) -->
+	<!-- wrap -->
+	<div id="pageSearch" class="wrap">
+
+		<div class="bg-color-2">
+			<div class="grid-content bg-color-white gap-4 bd-bottom-1">
+				<p class="title-type-6"><strong class="font-point-3">메뉴명</strong>을 입력하세요.</p>
+				<div class="box-search-2">
+					<input type="text" value="맛있는 치킨">
+					<a href="javascript:void(0);" class="btn-search" title="검색"><span class="icon-search color-2"><span>검색</span></span></a>
+				</div>
+				<!-- 결과 없음: 삭제 -->
+				<p class="txt-type-2 font-point-4">검색결과 14개</p>
+				<!-- //결과 없음: 삭제 -->
+			</div>
+
+			<div class="grid-list-1 bd-0">
+				<!-- 결과 없음 -->
+				<!-- <div class="box-noresult">
+					검색 결과가 없습니다.
+				</div> -->
+				<!-- //결과 없음 -->
+
+				<!-- 결과 있음 -->
+				<!-- list-thumb-2 type-2 -->
+				<ul class="list-thumb-2 type-2">
+					<!-- list -->
+					<li>
+						<a href="#none">
+							<span class="txt-wrap">
+								<span class="txt-1">핫황금올리브 크리스피</span>
+								<span class="txt-2">바삭바삭한 순살 후라이드 치킨</span>
+								<span class="txt-3">18,000원</span>
+							</span>
+							<span class="img-wrap"><span class="img-thumb"><span class="thumb" style="background-image:url(static/images/@none_2.png);"></span></span></span>
+						</a>
+					</li>
+					<li>
+						<a href="#none">
+							<span class="txt-wrap">
+								<span class="txt-1">핫황금올리브 크리스피 핫황금올리브 크리스피 핫황금올리브 크리스피</span>
+								<span class="txt-2">바삭바삭한 순살 후라이드 치킨 바삭바삭한 순살 후라이드 치킨 바삭바삭한 순살 후라이드 치킨</span>
+								<span class="txt-3">18,000원</span>
+							</span>
+							<span class="img-wrap"><span class="img-thumb"><span class="thumb" style="background-image:url(static/images/@none_2.png);"></span></span></span>
+						</a>
+					</li>
+					<li>
+						<a href="#none">
+							<span class="txt-wrap">
+								<span class="txt-1">핫황금올리브 크리스피 핫황금올리브 크리스피 핫황금올리브 크리스피</span>
+								<span class="txt-2">바삭바삭한 순살 후라이드 치킨 바삭바삭한 순살 후라이드 치킨 바삭바삭한 순살 후라이드 치킨</span>
+								<span class="txt-3">18,000원</span>
+							</span>
+							<!-- 이미지 없음: 영역 삭제 -->
+							<!-- <span class="img-wrap"><span class="img-thumb"><span class="thumb" style="background-image:url(static/images/@none_2.png);"></span></span></span> -->
+						</a>
+					</li>
+					<li>
+						<!-- 솔드아웃: a.is-soldout -->
+						<a href="#none" class="is-soldout">
+							<span class="txt-wrap">
+								<span class="txt-1">핫황금올리브 크리스피</span>
+								<span class="txt-2">바삭바삭한 순살 후라이드 치킨</span>
+								<span class="txt-3">18,000원</span>
+							</span>
+							<span class="img-wrap"><span class="img-thumb"><span class="thumb" style="background-image:url(static/images/@none_2.png);"></span></span></span>
+						</a>
+					</li>
+					<li>
+						<!-- 솔드아웃: a.is-soldout -->
+						<a href="#none" class="is-soldout">
+							<span class="txt-wrap">
+								<span class="txt-1">핫황금올리브 크리스피 </span>
+								<span class="txt-2">바삭바삭한 순살 후라이드 치킨</span>
+								<span class="txt-3">18,000원</span>
+							</span>
+							<!-- 솔드아웃 + 이미지 없음 -->
+							<span class="img-wrap"><span class="img-thumb"></span></span>
+						</a>
+					</li>
+					<!--
+						아이콘 관련:
+						19 아이콘(항상 맨앞) 제외
+						총 2개 까지 들어간다고하며,
+						첫번째 아이콘은 .btn-round-6
+						두번째 아이콘은 .btn-round-6.bg-2
+						로 색이 들어간다고 합니다.
+					-->
+					<li>
+						<a href="#none">
+							<span class="txt-wrap">
+								<span class="txt-1">핫황금올리브 크리스피<span class="btn-round-6">눈물 쏙 빼는 맛</span></span>
+								<span class="txt-2">바삭바삭한 순살 후라이드 치킨</span>
+								<span class="txt-3">18,000원</span>
+							</span>
+							<!-- 이미지 없음: 영역 삭제 -->
+							<!-- <span class="img-wrap"><span class="img-thumb"><span class="thumb" style="background-image:url(static/images/@none_2.png);"></span></span></span> -->
+						</a>
+					</li>
+					<li>
+						<a href="#none">
+							<span class="txt-wrap">
+								<span class="txt-1">핫황금올리브 크리스피 핫황금올리브 크리스피 핫황금올리브 크리스피</span>
+								<span class="txt-2">바삭바삭한 순살 후라이드 치킨 바삭바삭한 순살 후라이드 치킨 바삭바삭한 순살 후라이드 치킨</span>
+								<span class="txt-3">18,000원</span>
+							</span>
+							<!-- <span class="img-wrap"><span class="img-thumb"><span class="thumb" style="background-image:url(static/images/@none_2.png);"></span></span></span> -->
+						</a>
+					</li>
+					<li>
+						<a href="#none">
+							<span class="txt-wrap">
+								<span class="txt-1">핫황금올리브 크리스피<span class="btn-round-6">NEW</span><span class="btn-round-6 bg-2">인기</span></span>
+								<!-- <span class="txt-2">바삭바삭한 순살 후라이드 치킨 바삭바삭한 순살 후라이드 치킨 바삭바삭한 순살 후라이드 치킨</span> -->
+								<span class="txt-3">18,000원</span>
+							</span>
+							<!-- <span class="img-wrap"><span class="img-thumb"><span class="thumb" style="background-image:url(static/images/@none_2.png);"></span></span></span> -->
+						</a>
+					</li>
+					<li>
+						<a href="#none">
+							<span class="txt-wrap">
+								<span class="txt-1">핫황금올리브 크리스피<span class="icon-19y">19</span><span class="btn-round-6">인기</span></span>
+								<!-- <span class="txt-2">바삭바삭한 순살 후라이드 치킨 바삭바삭한 순살 후라이드 치킨 바삭바삭한 순살 후라이드 치킨</span> -->
+								<span class="txt-3">18,000원</span>
+							</span>
+							<!-- <span class="img-wrap"><span class="img-thumb"><span class="thumb" style="background-image:url(static/images/@none_2.png);"></span></span></span> -->
+						</a>
+					</li>
+					<!-- //list -->
+				</ul>
+				<!-- //list-thumb-2 type-2 -->
+				<!-- //결과 있음 -->
+			</div>
+		</div>
+
+	</div>
+	<!-- //wrap -->
+	<!-- //#pageSearch(검색) -->
+
+	<!-- #pageMenu(메뉴상세): 초기값 style="display:none;" -->
+	<!-- wrap -->
+	<div id="pageMenu" class="wrap" style="display:none;">
+
+		<!-- box-top-1 -->
+		<!-- 솔드아웃: .box-top-1.is-soldout -->
+		<div class="box-top-1">
+			<!-- 이미지 없음: .img-thumb 삭제 -->
+			<div class="img-thumb" style="background-image:url('static/images/@none_2.png');"></div>
+			<div class="txt-wrap">
+				<div class="inner">
+					<p class="title-1">흥부가 반하고 놀부가 기절한 황금 올리브 치킨</p>
+					<p class="txt-1 font-point-1">남은수량 : <span>3개</span></p>
+
+					<!-- box-more-2 -->
+					<div class="box-more-2 mt-2 color-2" data-max-height="3">
+						<div class="inner">
+							원래는 치킨집을 할려고 했었다. <br>
+							국물맛에 반해 매일 떡볶이만 먹은지 어언 3년~  <br>
+							드디어 궁극의 비법을 전수받았지만 치킨에 대한 열망도
+							버릴 수 없었던 사장은 결국 이 어려운 일을 해냅니다. <br>
+							치킨과 떡볶이의 콜라보레이션~!!
+						</div>
+						<div class="btn-wrap">
+							<a href="javascript:void(0);" class="btn-more"><span class="icon-arrow-more color-3"><span>더보기</span></span></a>
+						</div>
+					</div>
+					<!-- //box-more-2 -->
+				</div>
+			</div>
+		</div>
+		<!-- //box-top-1 -->
+
+		<!-- 처음 .grid-content .bd-top-1 삭제 -->
+		<div class="grid-content gap-4">
+			<div class="grid-col2">
+				<div class="left">
+					<p class="title-type-6">기본</p>
+				</div>
+				<div class="right">
+					<p class="title-type-6">54,567,000 원</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid-content gap-4 bd-top-1">
+			<p class="title-type-6">필수선택</p>
+			<ul class="list-input-1">
+				<li>
+					<input type="radio" id="radio-1-1" class="ipt-radio-1" name="radio-1">
+					<label for="radio-1-1">
+						<span class="ico-radio"><span></span></span>
+						<div class="grid-col2 wd-5">
+							<div class="left">순살</div>
+							<div class="right">1,000 원</div>
+						</div>
+					</label>
+				</li>
+			</ul>
+		</div>
+
+		<div class="grid-content gap-4 bd-top-1">
+			<p class="title-type-6">맛 선택</p>
+			<ul class="list-input-1">
+				<li>
+					<input type="radio" id="radio-2-1" class="ipt-radio-1" name="radio-2">
+					<label for="radio-2-1">
+						<span class="ico-radio"><span></span></span>
+						<div class="grid-col2 wd-5">
+							<div class="left">치즈</div>
+							<div class="right">0 원</div>
+						</div>
+					</label>
+				</li>
+				<li>
+					<input type="radio" id="radio-2-2" class="ipt-radio-1" name="radio-2">
+					<label for="radio-2-2">
+						<span class="ico-radio"><span></span></span>
+						<div class="grid-col2 wd-5">
+							<div class="left">그린(야채맛)</div>
+							<div class="right">0 원</div>
+						</div>
+					</label>
+				</li>
+			</ul>
+		</div>
+
+		<div class="grid-content gap-4 bd-top-1">
+			<p class="title-type-6">추가 선택</p>
+			<ul class="list-input-1">
+				<li>
+					<input type="checkbox" id="check-1-1" class="ipt-check-1">
+					<label for="check-1-1">
+						<span class="ico-check"><span></span></span>
+						<div class="grid-col2 wd-5">
+							<div class="left">웨지감자 추가</div>
+							<div class="right">3,000 원</div>
+						</div>
+					</label>
+				</li>
+				<li>
+					<input type="checkbox" id="check-1-2" class="ipt-check-1">
+					<label for="check-1-2">
+						<span class="ico-check"><span></span></span>
+						<div class="grid-col2 wd-5">
+							<div class="left">치즈스틱 추가</div>
+							<div class="right">3,000 원</div>
+						</div>
+					</label>
+				</li>
+				<li>
+					<input type="checkbox" id="check-1-3" class="ipt-check-1">
+					<label for="check-1-3">
+						<span class="ico-check"><span></span></span>
+						<div class="grid-col2 wd-5">
+							<div class="left">떡볶이 추가 면발은 국수면발로 맵지않은맛 많이 추가</div>
+							<div class="right">3,245,000 원</div>
+						</div>
+					</label>
+				</li>
+			</ul>
+		</div>
+
+		<div class="grid-content gap-4 bd-top-1">
+			<div class="grid-col2">
+				<div class="left">
+					<p class="title-type-6 mt-2">수량 <span data-msg="price1" style="display:none;">(최대 : 10)</span></p>
+				</div>
+				<div class="right">
+					<div class="box-item-num" data-msg-target="price1">
+						<!-- 비활성화: a.is-disabled -->
+						<a href="javascript:void(0);" class="btn-minus is-disabled"><span class="icon-minus"><span>수량 감소</span></span></a>
+						<span class="num">1</span>
+						<a href="javascript:void(0);" class="btn-plus"><span class="icon-plus"><span>수량 증가</span></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- //wrap -->
+	<!-- //#pageMenu(메뉴상세): 초기값 style="display:none;" -->
+
+	<!-- box-bottom-fix -->
+	<div class="box-bottom-fix">
+		<p class="txt-type-4 font-point-3 txt-align-center">(배달 최소주문금액 15,000원)</p>
+		<a href="javascript:void(0);" class="btn-round-7"><span class="txt-price">193,500원</span><span>주문하기</span><span class="txt-num">(10개)</span></a>
+	</div>
+	<!-- 비활성화: .box-bottom-fix.is-disabled -->
+	<!-- <div class="box-bottom-fix is-disabled">
+		<a href="javascript:void(0);" class="btn-round-7"><span>장바구니 담기</span></a>
+	</div> -->
+	<!-- //box-bottom-fix -->
+
+	<!-- 공통: js -->
+	<script type="text/javascript" src="static/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="static/js/front.js"></script>
+	<!-- //공통: js -->
+
+	<!-- 해당페이지 js -->
+	<script>
+		$(document).ready(function(){
+
+			// 메뉴상세 script
+			// parallaxBg 적용
+			$('.box-top-1 .img-thumb').parallaxBg();
+
+			// textMore 적용
+			$('.box-more-2').textMore();
+
+			// scrollBottomFix 적용
+			$('.box-bottom-fix').scrollBottomFix();
+
+			// scrollBottomFix 처음 숨김
+			$('.box-bottom-fix').scrollBottomFix('hide');
+
+			// .box-item-num 수량 증가 감소 처리
+			$('.box-item-num > a').on('click',function(e){
+				var $this = $(this),
+					$parent = $this.parents('.box-item-num'),
+					$btnMinus = $parent.find('.btn-minus'),
+					$btnPlus = $parent.find('.btn-plus'),
+					$num = $parent.find('.num'),
+					nowNum = parseInt($num.text(), 10),
+					minNum = 1,
+					maxNum = 10,
+					$msgTarget = $('[data-msg='+ $parent.attr('data-msg-target') +']'); // 최대수량일때 노출영역
+
+				if (!$this.hasClass('is-disabled')) {
+					if ($this.hasClass('btn-minus')) {
+						nowNum--;
+					};
+					if ($this.hasClass('btn-plus')) {
+						nowNum++;
+					};
+
+					if (nowNum <= minNum) {
+						nowNum = minNum;
+						$btnMinus.addClass('is-disabled');
+					}else{
+						$btnMinus.removeClass('is-disabled');
+					};
+
+					if (nowNum >= maxNum) {
+						nowNum = maxNum;
+						$btnPlus.addClass('is-disabled');
+
+						$msgTarget.show();
+					}else{
+						$btnPlus.removeClass('is-disabled');
+
+						$msgTarget.hide();
+					};
+
+					$num.text(nowNum);
+				};
+
+				e.preventDefault();
+			});
+
+			// 검색, 메뉴상세 비동기 처리
+			var $pageSearch = $('#pageSearch'), // 검색 영역
+				$pageMenu = $('#pageMenu'), // 메뉴상세 영역
+				pageSearchOriginTop = 0, // 검색 스크롤위치 저장 변수
+				pageMenuOriginTop = 0, // 메뉴상세 스크롤위치 저장 변수
+				asynPageChange = function(tg){ // 비동기 구현 함수
+					switch (tg) {
+						case 'pageSearch':
+							// 검색 노출
+							pageMenuOriginTop = window.pageYOffset; // 메뉴상세 스크롤위치 저장 (필요없으면 삭제: 메뉴상세 노출시 스크롤상단으로 이동)
+							$pageMenu.hide();
+							$pageSearch.show();
+							window.scrollTo(0, pageSearchOriginTop); // 저장된 검색 스크롤위치 이동
+
+							// scrollBottomFix 숨김
+							$('.box-bottom-fix').scrollBottomFix('hide');
+
+							// scrollBottomFix 노출 상태면 업데이트 해줘야함
+							// $('.box-bottom-fix').scrollBottomFix('update');
+
+							break;
+
+						case 'pageMenu':
+							// 메뉴상세 노출
+							pageSearchOriginTop = window.pageYOffset; // 검색 스크롤위치 저장
+							$pageSearch.hide();
+							$pageMenu.show();
+							window.scrollTo(0, pageMenuOriginTop); // 저장된 메뉴상세 스크롤위치 이동
+
+							// textMore 업데이트
+							$('.box-more-2').textMore('update');
+
+							// scrollBottomFix 노출
+							$('.box-bottom-fix').scrollBottomFix('show');
+
+							// scrollBottomFix 노출 상태면 업데이트 해줘야함
+							// $('.box-bottom-fix').scrollBottomFix('update');
+
+							break;
+					};
+				};
+
+			// 실행
+			// 검색 노출
+			// asynPageChange('pageSearch');
+			// 메뉴상세 노출
+			// asynPageChange('pageMenu');
+
+			// test 버튼(개발시 삭제)
+			$('#btnTest').on('click',function(e){
+				var $this = $(this);
+
+				if ($this.hasClass('show-pageMenu')) {
+					$this.removeClass('show-pageMenu');
+
+					// 검색 노출
+					asynPageChange('pageSearch');
+
+				}else{
+					$this.addClass('show-pageMenu');
+
+					// 메뉴상세 노출
+					asynPageChange('pageMenu');
+				};
+
+				e.preventDefault();
+			});
+			// //test 버튼(개발시 삭제)
+
+		});
+	</script>
+	<!-- //해당페이지 js -->
+
+</body>
+</html>

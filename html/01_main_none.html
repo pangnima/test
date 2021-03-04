@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi">
+	<title>경기도 오더</title>
+
+	<!-- 공통: font preload -->
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Regular.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Medium.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Bold.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/GyeonggiTitle_Medium.woff" type="font/woff" as="font" crossorigin>
+	<!-- //공통: font preload -->
+
+	<!-- 공통: css -->
+	<link rel="stylesheet" href="static/css/style.css">
+	<!-- //공통: css -->
+</head>
+<!-- 
+	**======================================
+	2020-10-23 변경 내역
+	메인 화면에서만 .wrap에 height-full / bg-color-1 추가
+	======================================**
+-->
+<body>
+
+	<!-- wrap -->
+	<div class="wrap">
+		<!-- 결과 없음 -->
+		<div class="box-noresult search">
+			검색 결과가 없습니다.
+		</div>
+		<!-- //결과 없음 -->
+	</div>
+	<!-- //wrap -->
+
+	<!-- 공통: js -->
+	<script type="text/javascript" src="static/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="static/js/front.js"></script>
+	<!-- //공통: js -->
+
+	<!-- 해당페이지 js -->
+	<script type="text/javascript" src="static/js/swiper.fix.js"></script>
+	<script>
+		$(document).ready(function(){
+			// .swiper-banner swiper.js 적용
+			var swiperBanner = new Swiper('.swiper-banner > .swiper-container', {
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: false,
+				},
+				loop: true,
+				speed: 300,
+				autoHeight: true,
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'fraction',
+				}
+			});
+
+			// .box-search placeholder 기능 적용
+			$('.box-search > input').applyPlaceholder();
+		});
+	</script>
+	<!-- //해당페이지 js -->
+</body>
+</html>

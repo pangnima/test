@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi">
+	<title>경기도 오더</title>
+
+	<!-- 공통: font preload -->
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Regular.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Medium.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Bold.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/GyeonggiTitle_Medium.woff" type="font/woff" as="font" crossorigin>
+	<!-- //공통: font preload -->
+
+	<!-- 공통: css -->
+	<link rel="stylesheet" href="static/css/style.css">
+	<!-- //공통: css -->
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- test용 -->
+		<div style="padding:20px;font-size:18px;line-height:26px;">
+			<div style="margin:50px 0;height:300px;width:50px;background-image: linear-gradient(#004c9b, #007bca);"></div>
+
+			<a href="javascript:void(0);" class="btn-layer-open" data-layer-target="#layerloading">로딩 레이어팝업 열기</a>
+			<br>
+			<a href="javascript:void(0);" class="btn-layer-close" data-layer-target="#layerloading">로딩 레이어팝업 닫기</a>
+
+			<div style="margin:50px 0;height:1000px;width:50px;background-image: linear-gradient(#004c9b, #007bca);"></div>
+		</div>
+		<!-- //test용 -->
+
+	</div>
+	<!-- //wrap -->
+
+	<!-- layer popup -->
+	<!-- 로딩 레이어팝업 -->
+	<!-- 로딩시 : .box-layer.is-loading -->
+	<div class="box-layer is-loading" id="layerloading">
+		<div class="inner-layer">
+			<!-- box-loading -->
+			<!-- 2020-11-23 로딩 이미지 변경 box-loading 에 icon 클래스 추가 -->
+			<div class="box-loading icon"></div>
+			<!-- //box-loading -->
+		</div><div class="inner-blank"></div>
+	</div>
+	<!-- //로딩 레이어팝업 -->
+	<!-- //layer popup -->
+
+	<!-- 공통: js -->
+	<script type="text/javascript" src="static/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="static/js/front.js"></script>
+	<!-- //공통: js -->
+
+	<!-- 해당페이지 js -->
+	<script>
+		$(document).ready(function(){
+			// waLayer 적용
+			$('.box-layer').waLayer({
+				fade: true
+			});
+
+			// 로딩레이어
+			$('#layerloading').waLayer({
+				fade: false //fade 기능 끄기
+			});
+
+			// test용
+			$('#layerloading').waLayer('open');
+		});
+	</script>
+	<!-- //해당페이지 js -->
+
+</body>
+</html>

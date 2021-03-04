@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi">
+	<title>경기도 오더</title>
+
+	<!-- 공통: font preload -->
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Regular.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Medium.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Bold.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/GyeonggiTitle_Medium.woff" type="font/woff" as="font" crossorigin>
+	<!-- //공통: font preload -->
+
+	<!-- 공통: css -->
+	<link rel="stylesheet" href="static/css/style.css">
+	<!-- //공통: css -->
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- test용 -->
+		<div style="padding:20px;font-size:18px;line-height:26px;">
+			<div style="margin:50px 0;height:300px;width:50px;background-image: linear-gradient(#004c9b, #007bca);"></div>
+
+			<a href="javascript:void(0);" class="btn-layer-open" data-layer-target="#layer1">사용 가능한 쿠폰 레이어팝업 열기</a>
+			<br>
+			<a href="javascript:void(0);" class="btn-layer-close" data-layer-target="#layer1">사용 가능한 쿠폰 레이어팝업 닫기</a>
+
+			<div style="margin:50px 0;height:1000px;width:50px;background-image: linear-gradient(#004c9b, #007bca);"></div>
+		</div>
+		<!-- //test용 -->
+
+	</div>
+	<!-- //wrap -->
+
+	<!-- layer popup -->
+	<!-- 사용 가능한 쿠폰 레이어팝업 -->
+	<div class="box-layer" id="layer1">
+		<div class="inner-layer">
+
+			<div class="bg-color-2">
+
+				<div class="grid-content gap-7 bg-color-white bd-bottom-1">
+					<p class="title-type-6 bold txt-align-center">사용 가능한 쿠폰</p>
+				</div>
+
+				<div class="grid-content gap-7 bg-color-white mt-2">
+					<div class="scrollBottomGradation">
+						<!-- list-line-2 -->
+						<ul class="list-line-2">
+							<li>
+								<input type="radio" id="radio-1-1" class="ipt-radio-1 type-2" name="radio-1">
+								<label for="radio-1-1">
+									<span class="ico-radio"><span></span></span>커피음료 1,000원 할인쿠폰
+									<p class="txt-date">2020.08.01 ~ 2020.08.30</p>
+								</label>
+							</li>
+							<li>
+								<input type="radio" id="radio-1-2" class="ipt-radio-1 type-2" name="radio-1">
+								<label for="radio-1-2">
+									<span class="ico-radio"><span></span></span>별점 참여 감사 이벤트 2,000원 할인쿠폰 별점 참여 감사 이벤트
+									<p class="txt-date">2020.08.01 ~ 2020.08.30</p>
+								</label>
+							</li>
+							<li>
+								<input type="radio" id="radio-1-3" class="ipt-radio-1 type-2" name="radio-1" disabled>
+								<label for="radio-1-3">
+									<span class="ico-radio"><span></span></span>커피음료 1,000원 할인쿠폰
+									<p class="txt-date">2020.08.01 ~ 2020.08.30</p>
+								</label>
+							</li>
+							<li>
+								<input type="radio" id="radio-1-4" class="ipt-radio-1 type-2" name="radio-1">
+								<label for="radio-1-4">
+									<span class="ico-radio"><span></span></span>커피음료 1,000원 할인쿠폰
+									<p class="txt-date">2020.08.01 ~ 2020.08.30</p>
+								</label>
+							</li>
+							<li>
+								<input type="radio" id="radio-1-5" class="ipt-radio-1 type-2" name="radio-1">
+								<label for="radio-1-5">
+									<span class="ico-radio"><span></span></span>커피음료 1,000원 할인쿠폰
+									<p class="txt-date">2020.08.01 ~ 2020.08.30</p>
+								</label>
+							</li>
+							<li>
+								<input type="radio" id="radio-1-6" class="ipt-radio-1 type-2" name="radio-1">
+								<label for="radio-1-6">
+									<span class="ico-radio"><span></span></span>커피음료 1,000원 할인쿠폰
+									<p class="txt-date">2020.08.01 ~ 2020.08.30</p>
+								</label>
+							</li>
+						</ul>
+						<!-- //list-line-2 -->
+					</div>
+				</div>
+
+			</div>
+
+			<ul class="list-btn-col2 no-gap">
+				<!-- 레이어팝업내 닫기 처리할 곳에 .dialog-close 추가 -->
+				<li><a href="javascript:void(0);" class="btn-rect-1 color-2 dialog-close">취소</a></li>
+				<li><a href="javascript:void(0);" class="btn-rect-1">선택</a></li>
+			</ul>
+		</div><div class="inner-blank"></div>
+	</div>
+	<!-- //사용 가능한 쿠폰 레이어팝업 -->
+	<!-- //layer popup -->
+
+	<!-- 공통: js -->
+	<script type="text/javascript" src="static/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="static/js/front.js"></script>
+	<!-- //공통: js -->
+
+	<!-- 해당페이지 js -->
+	<script>
+		$(document).ready(function(){
+			// waLayer 적용
+			$('.box-layer').waLayer({
+				fade: true
+			});
+
+			// scrollBottomGradation 적용
+			$('.scrollBottomGradation').scrollBottomGradation();
+
+			// 레이어팝업에 숨겨져있는 scrollBottomGradation, 레이어팝업 열때 업데이트 해줘야함.
+			$('.btn-layer-open').on('click',function(e){
+				// scrollBottomGradation update
+				$('.scrollBottomGradation').scrollBottomGradation('update');
+			});
+
+			// test용
+			$('#layer1').waLayer('open');
+			// scrollBottomGradation update
+			$('.scrollBottomGradation').scrollBottomGradation('update');
+		});
+	</script>
+	<!-- //해당페이지 js -->
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi">
+	<title>경기도 오더</title>
+
+	<!-- 공통: font preload -->
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Regular.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Medium.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Bold.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/GyeonggiTitle_Medium.woff" type="font/woff" as="font" crossorigin>
+	<!-- //공통: font preload -->
+
+	<!-- 공통: css -->
+	<link rel="stylesheet" href="static/css/style.css">
+	<!-- //공통: css -->
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<div class="bg-color-2">
+			<div class="grid-content bg-color-white gap-4 bd-bottom-1">
+				<p class="title-type-6"><strong class="font-point-3">메뉴명</strong>을 입력하세요.</p>
+				<div class="box-search-2">
+					<input type="text" value="맛있는 치킨">
+					<a href="javascript:void(0);" class="btn-search" title="검색"><span class="icon-search color-2"><span>검색</span></span></a>
+				</div>
+				<!-- 결과 없음: 삭제 -->
+				<p class="txt-type-2 font-point-4">검색결과 14개</p>
+				<!-- //결과 없음: 삭제 -->
+			</div>
+
+			<div class="grid-list-1 bd-0">
+				<!-- 결과 없음 -->
+				<!-- <div class="box-noresult">
+					검색 결과가 없습니다.
+				</div> -->
+				<!-- //결과 없음 -->
+
+				<!-- 결과 있음 -->
+				<!-- list-thumb-2 type-2 -->
+				<ul class="list-thumb-2 type-2">
+					<!-- list -->
+					<li>
+						<a href="#none">
+							<span class="txt-wrap">
+								<span class="txt-1">핫황금올리브 크리스피</span>
+								<span class="txt-2">바삭바삭한 순살 후라이드 치킨</span>
+								<span class="txt-3">18,000원</span>
+							</span>
+							<span class="img-wrap"><span class="img-thumb"><span class="thumb" style="background-image:url(static/images/@none_2.png);"></span></span></span>
+						</a>
+					</li>
+					<li>
+						<a href="#none">
+							<span class="txt-wrap">
+								<span class="txt-1">핫황금올리브 크리스피 핫황금올리브 크리스피 핫황금올리브 크리스피</span>
+								<span class="txt-2">바삭바삭한 순살 후라이드 치킨 바삭바삭한 순살 후라이드 치킨 바삭바삭한 순살 후라이드 치킨</span>
+								<span class="txt-3">18,000원</span>
+							</span>
+							<span class="img-wrap"><span class="img-thumb"><span class="thumb" style="background-image:url(static/images/@none_2.png);"></span></span></span>
+						</a>
+					</li>
+					<li>
+						<a href="#none">
+							<span class="txt-wrap">
+								<span class="txt-1">핫황금올리브 크리스피 핫황금올리브 크리스피 핫황금올리브 크리스피</span>
+								<span class="txt-2">바삭바삭한 순살 후라이드 치킨 바삭바삭한 순살 후라이드 치킨 바삭바삭한 순살 후라이드 치킨</span>
+								<span class="txt-3">18,000원</span>
+							</span>
+							<!-- 이미지 없음: 영역 삭제 -->
+							<!-- <span class="img-wrap"><span class="img-thumb"><span class="thumb" style="background-image:url(static/images/@none_2.png);"></span></span></span> -->
+						</a>
+					</li>
+					<li>
+						<!-- 솔드아웃: a.is-soldout -->
+						<a href="#none" class="is-soldout">
+							<span class="txt-wrap">
+								<span class="txt-1">핫황금올리브 크리스피</span>
+								<span class="txt-2">바삭바삭한 순살 후라이드 치킨</span>
+								<span class="txt-3">18,000원</span>
+							</span>
+							<span class="img-wrap"><span class="img-thumb"><span class="thumb" style="background-image:url(static/images/@none_2.png);"></span></span></span>
+						</a>
+					</li>
+					<li>
+						<!-- 솔드아웃: a.is-soldout -->
+						<a href="#none" class="is-soldout">
+							<span class="txt-wrap">
+								<span class="txt-1">핫황금올리브 크리스피 </span>
+								<span class="txt-2">바삭바삭한 순살 후라이드 치킨</span>
+								<span class="txt-3">18,000원</span>
+							</span>
+							<!-- 솔드아웃 + 이미지 없음 -->
+							<span class="img-wrap"><span class="img-thumb"></span></span>
+						</a>
+					</li>
+					<!--
+						아이콘 관련:
+						19 아이콘(항상 맨앞) 제외
+						총 2개 까지 들어간다고하며,
+						첫번째 아이콘은 .btn-round-6
+						두번째 아이콘은 .btn-round-6.bg-2
+						로 색이 들어간다고 합니다.
+					-->
+					<li>
+						<a href="#none">
+							<span class="txt-wrap">
+								<span class="txt-1">핫황금올리브 크리스피<span class="btn-round-6">눈물 쏙 빼는 맛</span></span>
+								<span class="txt-2">바삭바삭한 순살 후라이드 치킨</span>
+								<span class="txt-3">18,000원</span>
+							</span>
+							<!-- 이미지 없음: 영역 삭제 -->
+							<!-- <span class="img-wrap"><span class="img-thumb"><span class="thumb" style="background-image:url(static/images/@none_2.png);"></span></span></span> -->
+						</a>
+					</li>
+					<li>
+						<a href="#none">
+							<span class="txt-wrap">
+								<span class="txt-1">핫황금올리브 크리스피 핫황금올리브 크리스피 핫황금올리브 크리스피</span>
+								<span class="txt-2">바삭바삭한 순살 후라이드 치킨 바삭바삭한 순살 후라이드 치킨 바삭바삭한 순살 후라이드 치킨</span>
+								<span class="txt-3">18,000원</span>
+							</span>
+							<!-- <span class="img-wrap"><span class="img-thumb"><span class="thumb" style="background-image:url(static/images/@none_2.png);"></span></span></span> -->
+						</a>
+					</li>
+					<li>
+						<a href="#none">
+							<span class="txt-wrap">
+								<span class="txt-1">핫황금올리브 크리스피<span class="btn-round-6">NEW</span><span class="btn-round-6 bg-2">인기</span></span>
+								<!-- <span class="txt-2">바삭바삭한 순살 후라이드 치킨 바삭바삭한 순살 후라이드 치킨 바삭바삭한 순살 후라이드 치킨</span> -->
+								<span class="txt-3">18,000원</span>
+							</span>
+							<!-- <span class="img-wrap"><span class="img-thumb"><span class="thumb" style="background-image:url(static/images/@none_2.png);"></span></span></span> -->
+						</a>
+					</li>
+					<li>
+						<a href="#none">
+							<span class="txt-wrap">
+								<span class="txt-1">핫황금올리브 크리스피<span class="icon-19y">19</span><span class="btn-round-6">인기</span></span>
+								<!-- <span class="txt-2">바삭바삭한 순살 후라이드 치킨 바삭바삭한 순살 후라이드 치킨 바삭바삭한 순살 후라이드 치킨</span> -->
+								<span class="txt-3">18,000원</span>
+							</span>
+							<!-- <span class="img-wrap"><span class="img-thumb"><span class="thumb" style="background-image:url(static/images/@none_2.png);"></span></span></span> -->
+						</a>
+					</li>
+					<!-- //list -->
+				</ul>
+				<!-- //list-thumb-2 type-2 -->
+				<!-- //결과 있음 -->
+			</div>
+		</div>
+
+	</div>
+	<!-- //wrap -->
+
+	<!-- 공통: js -->
+	<script type="text/javascript" src="static/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="static/js/front.js"></script>
+	<!-- //공통: js -->
+
+	<!-- 해당페이지 js -->
+	<!-- //해당페이지 js -->
+
+</body>
+</html>

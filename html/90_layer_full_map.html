@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi">
+	<title>경기도 오더</title>
+
+	<!-- 공통: font preload -->
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Regular.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Medium.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Bold.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/GyeonggiTitle_Medium.woff" type="font/woff" as="font" crossorigin>
+	<!-- //공통: font preload -->
+
+	<!-- 공통: css -->
+	<link rel="stylesheet" href="static/css/style.css">
+	<!-- //공통: css -->
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- test용 -->
+		<div style="padding:20px;font-size:18px;line-height:26px;">
+			<div style="margin:50px 0;height:300px;width:50px;background-image: linear-gradient(#004c9b, #007bca);"></div>
+
+			<a href="javascript:void(0);" class="btn-layer-open" data-layer-target="#layer1">매장 위치 레이어팝업 열기</a>
+			<br>
+			<a href="javascript:void(0);" class="btn-layer-close" data-layer-target="#layer1">매장 위치 레이어팝업 닫기</a>
+
+			<div style="margin:50px 0;height:1000px;width:50px;background-image: linear-gradient(#004c9b, #007bca);"></div>
+		</div>
+		<!-- //test용 -->
+
+	</div>
+	<!-- //wrap -->
+
+	<!-- layer popup -->
+	<!-- 매장 위치 레이어팝업 -->
+	<!-- full 사이즈: .box-layer.is-full -->
+	<div class="box-layer is-full" id="layer1">
+		<div class="inner-layer">
+			<!-- 200921 삭제 -->
+			<!-- box-layer-top -->
+			<!-- <div class="box-layer-top">
+				<p class="title">매장 위치</p>
+				레이어팝업내 닫기 처리할 곳에 .dialog-close 추가
+				<a href="javascript:void(0);" class="btn-close dialog-close"><span class="icon-close-2"><span>닫기</span></span></a>
+			</div> -->
+			<!-- //box-layer-top -->
+			<!-- //200921 삭제 -->
+
+			<!-- 200921 감싸는 .box-layer-scroll 삭제 -->
+			<!-- box-layer-scroll -->
+			<!-- <div class="box-layer-scroll"> -->
+
+				<!-- 지도 api 영역 -->
+				<!-- 임시 -->
+				<div style="height:100%;background:url(static/images/@none_3.jpg);background-size:cover;background-position:50% 50%;overflow:hidden;"></div>
+				<!-- //임시 -->
+				<!-- //지도 api 영역 -->
+
+			<!-- </div> -->
+			<!-- //box-layer-scroll -->
+			<!-- //200921 감싸는 .box-layer-scroll 삭제 -->
+
+		</div><div class="inner-blank"></div>
+	</div>
+	<!-- //매장 위치 레이어팝업 -->
+	<!-- //layer popup -->
+
+	<!-- 공통: js -->
+	<script type="text/javascript" src="static/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="static/js/front.js"></script>
+	<!-- //공통: js -->
+
+	<!-- 해당페이지 js -->
+	<script>
+		$(document).ready(function(){
+			// waLayer 적용
+			$('.box-layer').waLayer({
+				fade: true
+			});
+
+			// test용
+			$('#layer1').waLayer('open');
+		});
+	</script>
+	<!-- //해당페이지 js -->
+
+</body>
+</html>

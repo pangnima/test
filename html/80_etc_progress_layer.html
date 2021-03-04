@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi">
+	<title>경기도 오더</title>
+
+	<!-- 공통: font preload -->
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Regular.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Medium.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Bold.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/GyeonggiTitle_Medium.woff" type="font/woff" as="font" crossorigin>
+	<!-- //공통: font preload -->
+
+	<!-- 공통: css -->
+	<link rel="stylesheet" href="static/css/style.css">
+	<!-- //공통: css -->
+</head>
+<body>
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- test용 -->
+		<div style="padding:20px;font-size:18px;line-height:26px;">
+
+			<a href="javascript:void(0);" class="btn-layer-open" data-layer-target="#layerProgress">결제 진행중 레이어팝업 열기</a>
+			<br>
+			<a href="javascript:void(0);" class="btn-layer-close" data-layer-target="#layerProgress">결제 진행중 레이어팝업 닫기</a>
+
+		</div>
+		<!-- //test용 -->
+
+	</div>
+	<!-- //wrap -->
+
+	<!-- layer popup -->
+	<!-- 결제 진행중 레이어팝업 -->
+	<!-- full 사이즈: .box-layer.is-full -->
+	<div class="box-layer is-full" id="layerProgress">
+		<div class="inner-layer">
+
+			<div class="grid-full-middle bg-color-1">
+				<div class="inner txt-align-center">
+					<!-- box-progress -->
+					<div class="box-progress">
+						<div class="icon-loading size-2">
+							<span class="dots dot-1"></span>
+							<span class="dots dot-2"></span>
+							<span class="dots dot-3"></span>
+						</div>
+						<p class="title-type-7 medium">결제 <span class="font-point-1">진행 중</span>입니다.</p>
+						<p class="txt-type-3 mt-2 font-point-4">
+							결제사 사정에 따라 <br>
+							다소 시간이 걸릴 수 있습니다.
+						</p>
+						<p class="txt-type-3 mt-2 font-point-4">
+							결제 완료 응답이 늦어질 경우 <br>
+							아래 <span class="font-point-1">결제 확인</span> 버튼을 눌러주세요.
+						</p>
+					</div>
+					<!-- //box-progress -->
+				</div>
+			</div>
+
+		</div><div class="inner-blank"></div>
+	</div>
+	<!-- //결제 진행중 레이어팝업 -->
+	<!-- //layer popup -->
+
+	<!-- 공통: js -->
+	<script type="text/javascript" src="static/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="static/js/front.js"></script>
+	<!-- //공통: js -->
+
+	<!-- 해당페이지 js -->
+	<script>
+		$(document).ready(function(){
+			// waLayer 적용
+			$('.box-layer').waLayer({
+				fade: true
+			});
+
+			// 결제 진행중
+			$('#layerProgress').waLayer({
+				fade: false //fade 기능 끄기
+			});
+
+			// test용
+			$('#layerProgress').waLayer('open');
+		});
+	</script>
+	<!-- //해당페이지 js -->
+
+</body>
+</html>

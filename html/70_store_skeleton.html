@@ -1,0 +1,2109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi">
+	<title>경기도 오더</title>
+
+	<!-- 공통: font preload -->
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Regular.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Medium.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Bold.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/GyeonggiTitle_Medium.woff" type="font/woff" as="font" crossorigin>
+	<!-- //공통: font preload -->
+
+	<!-- 공통: css -->
+	<link rel="stylesheet" href="static/css/style.css">
+	<!-- //공통: css -->
+
+	<!-- 로딩 css -->
+	<link rel="stylesheet" href="static/css/loading.min.css">
+	<!-- // 로딩 css -->
+</head>
+<body>
+
+	<!-- wrap -->
+	<div class="wrap">
+
+
+		<!-- swiper-menu -->
+		<!-- <div class="swiper-menu">
+			<div class="swiper-container" >
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><a href="javascript:void(0);" class="title"><span>전체</span></a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="title"><span>카페·디저트</span></a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="title"><span>분식</span></a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="title"><span>중식</span></a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="title"><span>치킨</span></a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="title"><span>한식</span></a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="title"><span>족발·보쌈</span></a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="title"><span>피자·양식</span></a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="title"><span>일식·돈까스</span></a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="title"><span>프랜차이즈</span></a></div>
+				</div>
+			</div>
+		</div> -->
+
+		<!-- swiper-menu -->
+		<div class="row" loading="menuList">
+			<div class="col-2"></div>
+			<div class="col-2"></div>
+			<div class="col-2"></div>
+			<div class="col-2"></div>
+			<div class="col-2"></div>
+		</div>
+		<!-- //swiper-menu -->
+
+
+		<!-- swiper-sort -->
+		<!-- <div class="swiper-sort">
+			<div class="swiper-container" >
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><a href="javascript:void(0);" class="btn-sort btn-round-1 is-on">가까운 순</a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="btn-sort btn-round-1">별점 높은 순</a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="btn-sort btn-round-1">주문 많은 순</a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="btn-sort btn-round-1">찜 많은 순</a></div>
+				</div>
+			</div>
+		</div> -->
+		<!-- //swiper-sort -->
+
+		<div class="row" loading="menuList">
+			<div class="col-3"></div>
+			<div class="col-2"></div>
+			<div class="col-1"></div>
+			<div class="col-2"></div>
+			<div class="col-3"></div>
+		</div>
+
+
+		<div class="row" loading="store">
+			<!-- 매장 리스트 -->
+			<div class="row">
+				<div class="row">
+					<div class="col img-thumb"></div>
+					<div class="col txt-wrap">
+						<div class="row">
+							<div class="col-12 title"></div>
+							<div class="col-7 txt"></div>
+							<div class="col-10 txt"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col img-thumb"></div>
+					<div class="col txt-wrap">
+						<div class="row">
+							<div class="col-12 title"></div>
+							<div class="col-7 txt"></div>
+							<div class="col-10 txt"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col img-thumb"></div>
+					<div class="col txt-wrap">
+						<div class="row">
+							<div class="col-12 title"></div>
+							<div class="col-7 txt"></div>
+							<div class="col-10 txt"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col img-thumb"></div>
+					<div class="col txt-wrap">
+						<div class="row">
+							<div class="col-12 title"></div>
+							<div class="col-7 txt"></div>
+							<div class="col-10 txt"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //매장 리스트 -->
+		</div>
+
+
+		<!-- swiper-page -->
+		<div class="swiper-page">
+			<div class="swiper-container" >
+				<div class="swiper-wrapper">
+					<!-- list -->
+					<!-- 전체 -->
+					<div class="swiper-slide">
+						<!-- list-thumb-1 type-2 -->
+						<ul class="list-thumb-1 type-2 mt-0">
+							<!-- list -->
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">연남동 디저트 듀윗<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<!-- 20201103 수정 말줄임 font-ellipsis 클래스 추가 -->
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png">
+										<!-- 준비중 -->
+										<span class="is-ready"><span>준비중</span></span>
+									</span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점 두마리 찜닭 홍대점 두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<!-- <span><span class="btn-round-2">배달</span></span> -->
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background=""></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">연남동 디저트 듀윗<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png">
+										<!-- 준비중 -->
+										<span class="is-ready"><span>준비중</span></span>
+									</span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점 두마리 찜닭 홍대점 두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<!-- <span><span class="btn-round-2">배달</span></span> -->
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background=""></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">연남동 디저트 듀윗<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<!-- 20201103 수정 말줄임 font-ellipsis 클래스 추가 -->
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<!-- 2020-12-07 로딩 추가 -->
+							<li class="loading">
+								<span class="dots dot-1"></span>
+								<span class="dots dot-2"></span>
+								<span class="dots dot-3"></span>
+							</li>n
+							<!-- //list -->
+						</ul>
+						<!-- //list-thumb-1 type-2 -->
+					</div>
+					<!-- 카페·디저트 -->
+					<div class="swiper-slide">
+						<!-- list-thumb-1 type-2 -->
+						<ul class="list-thumb-1 type-2 mt-0">
+							<!-- list -->
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">연남동 디저트 듀윗<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							
+						</ul>
+						<!-- //list-thumb-1 type-2 -->
+					</div>
+					<!-- 분식 -->
+					<div class="swiper-slide">
+						<!-- list-thumb-1 type-2 -->
+						<ul class="list-thumb-1 type-2 mt-0">
+							<!-- list -->
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">연남동 디저트 듀윗<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png">
+										<!-- 준비중 -->
+										<span class="is-ready"><span>준비중</span></span>
+									</span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점 두마리 찜닭 홍대점 두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<!-- <span><span class="btn-round-2">배달</span></span> -->
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background=""></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">연남동 디저트 듀윗<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png">
+										<!-- 준비중 -->
+										<span class="is-ready"><span>준비중</span></span>
+									</span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점 두마리 찜닭 홍대점 두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<!-- <span><span class="btn-round-2">배달</span></span> -->
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background=""></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<!-- //list -->
+						</ul>
+						<!-- //list-thumb-1 type-2 -->
+					</div>
+					<!-- 중식 -->
+					<div class="swiper-slide">
+						<!-- list-thumb-1 type-2 -->
+						<ul class="list-thumb-1 type-2 mt-0">
+							<!-- list -->
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">연남동 디저트 듀윗<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png">
+										<!-- 준비중 -->
+										<span class="is-ready"><span>준비중</span></span>
+									</span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점 두마리 찜닭 홍대점 두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<!-- <span><span class="btn-round-2">배달</span></span> -->
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background=""></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">연남동 디저트 듀윗<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png">
+										<!-- 준비중 -->
+										<span class="is-ready"><span>준비중</span></span>
+									</span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점 두마리 찜닭 홍대점 두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<!-- <span><span class="btn-round-2">배달</span></span> -->
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background=""></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<!-- //list -->
+						</ul>
+						<!-- //list-thumb-1 type-2 -->
+					</div>
+					<!-- 치킨 -->
+					<div class="swiper-slide">
+						<!-- list-thumb-1 type-2 -->
+						<ul class="list-thumb-1 type-2 mt-0">
+							<!-- list -->
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">연남동 디저트 듀윗<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							
+						</ul>
+						<!-- //list-thumb-1 type-2 -->
+					</div>
+					<!-- 한식 -->
+					<div class="swiper-slide">
+						<!-- list-thumb-1 type-2 -->
+						<ul class="list-thumb-1 type-2 mt-0">
+							<!-- list -->
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">연남동 디저트 듀윗<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png">
+										<!-- 준비중 -->
+										<span class="is-ready"><span>준비중</span></span>
+									</span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점 두마리 찜닭 홍대점 두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<!-- <span><span class="btn-round-2">배달</span></span> -->
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background=""></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">연남동 디저트 듀윗<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png">
+										<!-- 준비중 -->
+										<span class="is-ready"><span>준비중</span></span>
+									</span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점 두마리 찜닭 홍대점 두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<!-- <span><span class="btn-round-2">배달</span></span> -->
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background=""></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<!-- //list -->
+						</ul>
+						<!-- //list-thumb-1 type-2 -->
+					</div>
+					<!-- 족발·보쌈 -->
+					<div class="swiper-slide">
+						<!-- list-thumb-1 type-2 -->
+						<ul class="list-thumb-1 type-2 mt-0">
+							<!-- list -->
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">연남동 디저트 듀윗<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png">
+										<!-- 준비중 -->
+										<span class="is-ready"><span>준비중</span></span>
+									</span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점 두마리 찜닭 홍대점 두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<!-- <span><span class="btn-round-2">배달</span></span> -->
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background=""></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">연남동 디저트 듀윗<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png">
+										<!-- 준비중 -->
+										<span class="is-ready"><span>준비중</span></span>
+									</span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점 두마리 찜닭 홍대점 두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<!-- <span><span class="btn-round-2">배달</span></span> -->
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background=""></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<!-- //list -->
+						</ul>
+						<!-- //list-thumb-1 type-2 -->
+					</div>
+					<!-- 피자·양식 -->
+					<div class="swiper-slide">
+						<!-- list-thumb-1 type-2 -->
+						<ul class="list-thumb-1 type-2 mt-0">
+							<!-- list -->
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">연남동 디저트 듀윗<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png">
+										<!-- 준비중 -->
+										<span class="is-ready"><span>준비중</span></span>
+									</span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점 두마리 찜닭 홍대점 두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<!-- <span><span class="btn-round-2">배달</span></span> -->
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background=""></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">연남동 디저트 듀윗<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png">
+										<!-- 준비중 -->
+										<span class="is-ready"><span>준비중</span></span>
+									</span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점 두마리 찜닭 홍대점 두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<!-- <span><span class="btn-round-2">배달</span></span> -->
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background=""></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<!-- //list -->
+						</ul>
+						<!-- //list-thumb-1 type-2 -->
+					</div>
+					<!-- 일식·돈까스 -->
+					<div class="swiper-slide">
+						<!-- list-thumb-1 type-2 -->
+						<ul class="list-thumb-1 type-2 mt-0">
+							<!-- list -->
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">연남동 디저트 듀윗<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png">
+										<!-- 준비중 -->
+										<span class="is-ready"><span>준비중</span></span>
+									</span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점 두마리 찜닭 홍대점 두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<!-- <span><span class="btn-round-2">배달</span></span> -->
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background=""></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">연남동 디저트 듀윗<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png">
+										<!-- 준비중 -->
+										<span class="is-ready"><span>준비중</span></span>
+									</span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점 두마리 찜닭 홍대점 두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<!-- <span><span class="btn-round-2">배달</span></span> -->
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background=""></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<!-- //list -->
+						</ul>
+						<!-- //list-thumb-1 type-2 -->
+					</div>
+					<!-- 프랜차이즈 -->
+					<div class="swiper-slide">
+						<!-- list-thumb-1 type-2 -->
+						<ul class="list-thumb-1 type-2 mt-0">
+							<!-- list -->
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">연남동 디저트 듀윗<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png">
+										<!-- 준비중 -->
+										<span class="is-ready"><span>준비중</span></span>
+									</span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점 두마리 찜닭 홍대점 두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<!-- <span><span class="btn-round-2">배달</span></span> -->
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background=""></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">연남동 디저트 듀윗<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png">
+										<!-- 준비중 -->
+										<span class="is-ready"><span>준비중</span></span>
+									</span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background="static/images/@none_2.png"></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점 두마리 찜닭 홍대점 두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<span><span class="icon-star">별점</span>4.8</span>
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<!-- <span><span class="btn-round-2">배달</span></span> -->
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="about:blank">
+									<!-- <span class="img-thumb" style="background-image:url('static/images/@none_2.png');"></span> -->
+									<!-- lazy load 적용 -->
+									<span class="img-thumb swiper-lazy" data-background=""></span>
+									<span class="txt-wrap">
+										<span class="title">두마리 찜닭 홍대점<span class="icon-coupon">쿠폰</span></span>
+										<span class="list-1">
+											<!-- <span><span class="icon-star">별점</span>4.8</span> -->
+											<span><span class="icon-time">시간</span>16~26분</span>
+											<span><span class="icon-location">거리</span>648m</span>
+										</span>
+										<span class="line-dot-1"></span>
+										<span class="txt mt-3 font-ellipsis">딸기케이크,마카롱</span>
+										<span class="list-2">
+											<span>최소주문 12,000원</span>
+											<span>배달팁 2,000원</span>
+										</span>
+										<span class="list-3">
+											<span><span class="btn-round-2">배달</span></span>
+											<span><span class="btn-round-2 color-2">픽업</span></span>
+										</span>
+									</span>
+								</a>
+							</li>
+
+							<li class="loading">
+								<span class="dots dot-1"></span>
+								<span class="dots dot-2"></span>
+								<span class="dots dot-3"></span>
+							</li>
+							<!-- //list -->
+						</ul>
+						<!-- //list-thumb-1 type-2 -->
+					</div>
+					<!-- //list -->
+				</div>
+			</div>
+		</div>
+		<!-- //swiper-page -->
+
+	</div>
+	<!-- //wrap -->
+
+	<!-- 공통: js -->
+	<script type="text/javascript" src="static/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="static/js/front.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js" type="text/javascript"></script>
+	<!-- //공통: js -->
+
+	<!-- 해당페이지 js -->
+	<script type="text/javascript" src="static/js/swiper.fix.js"></script>
+	<script>
+		$(document).ready(function(){
+			
+			/* 2020-10-23 - scrollTopFix 상단으로 이동*/
+			// scrollTopFix 적용
+			$('.swiper-menu').scrollTopFix({
+				top: 0,
+				gap: 0,
+			});
+			$('.swiper-sort').scrollTopFix({
+				top: 50, // swiper-menu 높이
+				gap: -50, // swiper-menu 높이
+			});
+
+			/* 2020-10-23 매장 리스트 부족시 사용 함수 추가 */
+			// 리스트가 부족할때 스와이프 높이 100% 지정
+			var swipeHeightFull = function(){
+				var fixEl = document.querySelectorAll('.scrollTopFix-wrap');
+				var fixElHeight = 0;
+				var swiperWrap = document.querySelector('.swiper-page');
+				if(fixEl){
+					fixEl.forEach(element => {
+						fixElHeight += element.offsetHeight
+					});
+					swiperWrap.style.minHeight = "calc(100vh - ".concat(fixElHeight, "px)");
+				}
+			}
+
+			// .swiper-menu swiper.js 적용
+			var swiperMenu = new Swiper('.swiper-menu > .swiper-container', {
+				initialSlide: 0,
+				slidesPerView: 'auto',
+				centeredSlides: true,
+				centeredSlidesBounds: true,
+				normalizeSlideIndex: false,
+				freeMode: true,
+				freeModeMomentumRatio: 0.5,
+				freeModeMomentumVelocityRatio: 0.1,
+			});
+
+			// .swiper-sort swiper.js 적용
+			var swiperSort = new Swiper('.swiper-sort > .swiper-container', {
+				slidesPerView: 'auto',
+				centeredSlides: true,
+				centeredSlidesBounds: true,
+				normalizeSlideIndex: false,
+				freeMode: true,
+				freeModeMomentumRatio: 0.5,
+				freeModeMomentumVelocityRatio: 0.1,
+			});
+
+			// .swiper-page swiper.js 적용
+			var swiperPage = new Swiper('.swiper-page > .swiper-container', {
+				initialSlide: 0,
+				speed: 300,
+				touchRatio: 0.5,
+				longSwipesMs: 3000,
+				touchAngle: 30,
+				touchReleaseOnEdges: true,
+				swipeMinDistance: 100,
+				/* 2020-10-23 autoHeight 재 추가 */
+				autoHeight:true,
+				thumbs: {
+					swiper: swiperMenu
+				},
+				on: {
+					/* 2020-10-23 init 함수 추가 */
+					init: function(){
+						swipeHeightFull();
+					},
+					slideChange: function(){
+						swiperMenu.slideTo(swiperPage.activeIndex, 300);
+						$('html, body').scrollTop(0);
+					}
+				},
+				// lazy load 적용
+				preloadImages: false,
+				lazy: {
+					loadPrevNext: true,
+				},
+			});
+
+			// .swiper-sort .btn-sort on 처리
+			var $btnSort = $('.swiper-sort .btn-sort');
+			$btnSort.on('click',function(e){
+				var $this = $(this);
+				if (!$this.hasClass('is-on')) {
+					$btnSort.removeClass('is-on');
+					$this.addClass('is-on');
+				};
+				e.preventDefault();
+			});
+
+			// 참고: 6번째 슬라이드 이동, 속도 0
+			// swiperPage.slideTo(5, 0);
+
+			// 참고: 무한 스크롤 로드
+			// var $window = $(window);
+			// var $document = $(document);
+			// var scrollIsLoad = false;
+			// var scrollGap = 10;
+			// var scrollIdx = 0;
+			// $window.on('scroll',function() {
+			// 	if ($document.height() - $window.height() <= $window.scrollTop() + scrollGap) {
+			// 		if (!scrollIsLoad) {
+			// 			scrollIsLoad = true;
+			// 			// 리스트 로드 ($.ajax, .load() 등등..)
+			// 			var $tgListLast = $('.swiper-page .swiper-slide.swiper-slide-active .list-thumb-1 > li').last(); // 활성화된 swiper .list-thumb-1 마지막 li
+			// 			$tgListLast.after('<li>'+ scrollIdx +'</li>');
+			// 			scrollIdx++;
+
+			// 			swiperPage.update(); // swiperPage 업데이트
+
+			// 			scrollIsLoad = false; // 중복실행방지
+			// 		};
+			// 	};
+			// });
+
+			var animation = bodymovin.loadAnimation({
+				container: document.getElementById('list-loading'), // Required
+				path: './static/images/lott/list_loading.json', // Required
+				renderer: 'svg/canvas/html', // Required
+				loop: true, // Optional
+				autoplay: true, // Optional
+				name: "Hello World", // Name for future reference. Optional.
+			})
+		});
+	</script>
+	<!-- //해당페이지 js -->
+
+</body>
+</html>

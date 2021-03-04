@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi">
+	<title>경기도 오더</title>
+
+	<!-- 공통: font preload -->
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Regular.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Medium.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/NotoSansCJKkr-Bold.woff" type="font/woff" as="font" crossorigin>
+	<link rel="preload" href="https://cdn.orderpick.kr/font/GyeonggiTitle_Medium.woff" type="font/woff" as="font" crossorigin>
+	<!-- //공통: font preload -->
+
+	<!-- 공통: css -->
+	<link rel="stylesheet" href="static/css/style.css">
+	<!-- //공통: css -->
+</head>
+<body>
+
+	<!-- wrap -->
+	<div class="wrap">
+
+		<!-- swiper-menu -->
+		<div class="swiper-menu">
+			<div class="swiper-container" >
+				<div class="swiper-wrapper">
+					<!-- list -->
+					<div class="swiper-slide"><a href="javascript:void(0);" class="title"><span>전체</span></a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="title"><span>카페·디저트</span></a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="title"><span>분식</span></a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="title"><span>중식</span></a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="title"><span>치킨</span></a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="title"><span>한식</span></a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="title"><span>족발·보쌈</span></a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="title"><span>피자·양식</span></a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="title"><span>일식·돈까스</span></a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="title"><span>프랜차이즈</span></a></div>
+					<!-- //list -->
+				</div>
+			</div>
+		</div>
+		<!-- //swiper-menu -->
+
+		<!-- swiper-sort -->
+		<div class="swiper-sort">
+			<div class="swiper-container" >
+				<div class="swiper-wrapper">
+					<!-- list -->
+					<!-- 활성화 .is-on -->
+					<div class="swiper-slide"><a href="javascript:void(0);" class="btn-sort btn-round-1 is-on">가까운 순</a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="btn-sort btn-round-1">별점 높은 순</a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="btn-sort btn-round-1">주문 많은 순</a></div>
+					<div class="swiper-slide"><a href="javascript:void(0);" class="btn-sort btn-round-1">찜 많은 순</a></div>
+					<!-- //list -->
+				</div>
+			</div>
+		</div>
+		<!-- //swiper-sort -->
+
+		<!-- 매장 없음 -->
+		<div class="">
+			<!-- 201026 수정 내역 : 검색결과없을때 store 클래스 추가-->
+			<div class="box-noresult store">
+				매장 모으는 중
+			</div>
+		</div>
+		<!-- // 매장 없음 -->
+
+	</div>
+	<!-- //wrap -->
+
+	<!-- 공통: js -->
+	<script type="text/javascript" src="static/js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="static/js/front.js"></script>
+	<!-- //공통: js -->
+
+	<!-- 해당페이지 js -->
+	<script type="text/javascript" src="static/js/swiper.fix.js"></script>
+	<script>
+		$(document).ready(function(){
+			
+			/* 2020-10-23 - scrollTopFix 상단으로 이동*/
+			// scrollTopFix 적용
+			$('.swiper-menu').scrollTopFix({
+				top: 0,
+				gap: 0,
+			});
+			$('.swiper-sort').scrollTopFix({
+				top: 50, // swiper-menu 높이
+				gap: -50, // swiper-menu 높이
+			});
+
+			/* 2020-10-23 매장 리스트 부족시 사용 함수 추가 */
+			// 리스트가 부족할때 스와이프 높이 100% 지정
+			var swipeHeightFull = function(){
+				var fixEl = document.querySelectorAll('.scrollTopFix-wrap');
+				var fixElHeight = 0;
+				var swiperWrap = document.querySelector('.swiper-page');
+				if(fixEl){
+					fixEl.forEach(element => {
+						fixElHeight += element.offsetHeight
+					});
+					swiperWrap.style.minHeight = "calc(100vh - ".concat(fixElHeight, "px)");
+				}
+			}
+
+			// .swiper-menu swiper.js 적용
+			var swiperMenu = new Swiper('.swiper-menu > .swiper-container', {
+				initialSlide: 0,
+				slidesPerView: 'auto',
+				centeredSlides: true,
+				centeredSlidesBounds: true,
+				normalizeSlideIndex: false,
+				freeMode: true,
+				freeModeMomentumRatio: 0.5,
+				freeModeMomentumVelocityRatio: 0.1,
+			});
+
+			// .swiper-sort swiper.js 적용
+			var swiperSort = new Swiper('.swiper-sort > .swiper-container', {
+				slidesPerView: 'auto',
+				centeredSlides: true,
+				centeredSlidesBounds: true,
+				normalizeSlideIndex: false,
+				freeMode: true,
+				freeModeMomentumRatio: 0.5,
+				freeModeMomentumVelocityRatio: 0.1,
+			});
+
+			// .swiper-page swiper.js 적용
+			var swiperPage = new Swiper('.swiper-page > .swiper-container', {
+				initialSlide: 0,
+				speed: 300,
+				touchRatio: 0.5,
+				longSwipesMs: 3000,
+				touchAngle: 30,
+				touchReleaseOnEdges: true,
+				swipeMinDistance: 100,
+				/* 2020-10-23 autoHeight 재 추가 */
+				autoHeight:true,
+				thumbs: {
+					swiper: swiperMenu
+				},
+				on: {
+					/* 2020-10-23 init 함수 추가 */
+					init: function(){
+						swipeHeightFull();
+					},
+					slideChange: function(){
+						swiperMenu.slideTo(swiperPage.activeIndex, 300);
+						$('html, body').scrollTop(0);
+					}
+				},
+				// lazy load 적용
+				preloadImages: false,
+				lazy: {
+					loadPrevNext: true,
+				},
+			});
+
+			// .swiper-sort .btn-sort on 처리
+			var $btnSort = $('.swiper-sort .btn-sort');
+			$btnSort.on('click',function(e){
+				var $this = $(this);
+				if (!$this.hasClass('is-on')) {
+					$btnSort.removeClass('is-on');
+					$this.addClass('is-on');
+				};
+				e.preventDefault();
+			});
+
+			// 참고: 6번째 슬라이드 이동, 속도 0
+			// swiperPage.slideTo(5, 0);
+
+			// 참고: 무한 스크롤 로드
+			// var $window = $(window);
+			// var $document = $(document);
+			// var scrollIsLoad = false;
+			// var scrollGap = 10;
+			// var scrollIdx = 0;
+			// $window.on('scroll',function() {
+			// 	if ($document.height() - $window.height() <= $window.scrollTop() + scrollGap) {
+			// 		if (!scrollIsLoad) {
+			// 			scrollIsLoad = true;
+			// 			// 리스트 로드 ($.ajax, .load() 등등..)
+			// 			var $tgListLast = $('.swiper-page .swiper-slide.swiper-slide-active .list-thumb-1 > li').last(); // 활성화된 swiper .list-thumb-1 마지막 li
+			// 			$tgListLast.after('<li>'+ scrollIdx +'</li>');
+			// 			scrollIdx++;
+
+			// 			swiperPage.update(); // swiperPage 업데이트
+
+			// 			scrollIsLoad = false; // 중복실행방지
+			// 		};
+			// 	};
+			// });
+		});
+	</script>
+	<!-- //해당페이지 js -->
+
+</body>
+</html>
